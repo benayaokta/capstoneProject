@@ -10,8 +10,10 @@ import Alamofire
 
 enum APIConfiguration: URLRequestConvertible {
 
-    
     case getAllPairs
+    case orderBook(String)
+    case ticker(String)
+    case depth(String)
     
     var baseURL: String {
         return "https://indodax.com"
@@ -25,11 +27,20 @@ enum APIConfiguration: URLRequestConvertible {
         switch self {
         case .getAllPairs:
             return "/api/pairs"
+        case .orderBook(let id):
+            return "/api/trades/\(id)"
+        case .ticker(let id):
+            return "/api/ticker/\(id)"
+        case .depth(let id):
+            return "/api/depth/\(id)"
         }
     }
     
     var parameters: Parameters? {
-        return nil
+        switch self {
+        default:
+            return nil
+        }
     }
     
     var encoding: ParameterEncoding {

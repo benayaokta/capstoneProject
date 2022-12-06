@@ -1,5 +1,5 @@
 //
-//  HomeTableViewCell.swift
+//  CapstoneTableViewCell.swift
 //  CapstoneProject
 //
 //  Created by Benaya Oktavianus on 24/11/22.
@@ -8,7 +8,7 @@
 import UIKit
 import Stevia
 
-final class HomeTableViewCell: UITableViewCell {
+final class CapstoneTableViewCell: UITableViewCell {
     
     let coinDesc: UILabel = UILabel()
     let coinImage: UIImageView = UIImageView()

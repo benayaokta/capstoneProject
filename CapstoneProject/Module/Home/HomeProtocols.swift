@@ -9,7 +9,6 @@ import Combine
 
 protocol HomeViewModelProtocol {
     func getAllPairs(name: String) -> String
-//    var isLoadingTrue: AnyPublisher<Bool, Never> { get set }
     var isLoading: PassthroughSubject<Bool, Never> { get set }
     func getAllPairs() -> AnyPublisher<[AllPairs], Error>
 }

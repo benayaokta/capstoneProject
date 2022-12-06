@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupFavoriteButtonn()
         injection()
         setupHierarchy()
         setupStyle()
@@ -56,7 +57,7 @@ class HomeViewController: UIViewController {
     private func setupComponent() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.registerCellClass(type: HomeTableViewCell.self)
+        tableView.registerCellClass(type: CapstoneTableViewCell.self)
         
         searchController.searchResultsUpdater = self
         tableView.tableHeaderView = searchController.searchBar
@@ -64,6 +65,17 @@ class HomeViewController: UIViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
         tableView.refreshControl = refreshControl
+    }
+    
+    private func setupFavoriteButtonn() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(goToFavorite))
+    }
+    
+    @objc private func goToFavorite() {
+        print("go to favorite")
+//        DatabaseManager.shared.setFavorite(String: "tes tes tes")
+//        DatabaseManager.shared.deleteFavorite()
+        self.navigationController?.pushViewController(FavoriteViewController(), animated: true)
     }
     
     @objc private func reloadData() {
@@ -93,7 +105,7 @@ class HomeViewController: UIViewController {
         
         let loading = viewModel?.isLoading
             .receive(on: RunLoop.main)
-        loading.sink(receiveValue: { [weak self] isLoading in
+        loading?.sink(receiveValue: { [weak self] isLoading in
             guard let self else { return }
             if isLoading {
                 self.indicator.startAnimating()
@@ -141,16 +153,58 @@ class HomeViewController: UIViewController {
             self.tableView.reloadData()
         }).store(in: &cancellables)
     }
+    
+    private func addToFavorite(index: IndexPath) {
+//        DatabaseManager.shared.setFavorite(pair: self.filteredData[index.row]) { success, error in
+//            guard error == nil else {
+//                if let error {
+//                    SnackBar.make(in: self.view, message: error.rawValue, duration: .lengthShort).show()
+//                }
+//                return
+//            }
+//            SnackBar.make(in: self.view, message: "Success add to favorite", duration: .lengthShort).show()
+//
+//        }
+        if var array = DatabaseManager.shared.getData(type: [AllPairs].self, forKey: "favorite") {
+            if !array.contains(where: {$0.coinID == self.filteredData[index.row].coinID}) {
+                array.append(self.filteredData[index.row])
+                DatabaseManager.shared.setData(value: array, key: "favorite")
+                CapstoneSnackbar.make(in: self.view, message: "Success add to favorite", duration: .lengthShort).show()
+
+            } else {
+                CapstoneSnackbar.make(in: self.view, message: "Item already on favorite", duration: .lengthShort).show()
+            }
+           
+        } else {
+            var newArray: [AllPairs] = [AllPairs]()
+            newArray.append(self.filteredData[index.row])
+            DatabaseManager.shared.setData(value: newArray, key: "favorite")
+            CapstoneSnackbar.make(in: self.view, message: "Success add to favorite", duration: .lengthShort).show()
+        }        
+    }
+    
 }
 
 extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .normal, title: "Add To Favorite") { _, _, completionHandler in
+            self.addToFavorite(index: indexPath)
+            completionHandler(true)
+        }
+        action.backgroundColor = .systemBlue
+        
+        return UISwipeActionsConfiguration(actions: [action])
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(filteredData[indexPath.row])
+        // go to detail
+        
+        self.navigationController?.pushViewController(DetailViewController(data: self.filteredData[indexPath.row]), animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -165,7 +219,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueCell(withType: HomeTableViewCell.self, for: indexPath) as? HomeTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueCell(withType: CapstoneTableViewCell.self, for: indexPath) as? CapstoneTableViewCell else { return UITableViewCell() }
         let cryptoData: AllPairs = filteredData[indexPath.row]
         
         cell.coinDesc.text = cryptoData.coinDescription
@@ -186,7 +240,6 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else { return }
-//        handleSeachValue(text: text)
         searchResult.send(text)
     }
 }

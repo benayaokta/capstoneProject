@@ -17,8 +17,6 @@ final class HomeViewModel: HomeViewModelProtocol {
         self.repo = repo
     }
    
-    
-//    @Published var isLoadingTrue: AnyPublisher<Bool, Never> = false
     var isLoading: PassthroughSubject<Bool, Never> = PassthroughSubject<Bool, Never>()
     
     func getAllPairs(name: String) -> String {
@@ -26,9 +24,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
     
     func getAllPairs() -> AnyPublisher<[AllPairs], Error> {
-//        NetworkService().request(config: APIConfiguration.getAllPairs, object: [AllPairs].self)
-//        isLoadingTrue = true
-        isLoading.send(false)
+        self.isLoading.send(true)
         return Future<[AllPairs], Error> { completion in
             NetworkService().request(config: APIConfiguration.getAllPairs, object: [AllPairs].self) { [weak self] responseData, afError in
                 if let afError {
@@ -36,7 +32,6 @@ final class HomeViewModel: HomeViewModelProtocol {
                 } else {
                     completion(.success(responseData!))
                 }
-//                self?.isLoadingTrue = false
                 self?.isLoading.send(false)
             }
         }.eraseToAnyPublisher()

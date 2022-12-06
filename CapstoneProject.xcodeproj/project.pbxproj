@@ -24,11 +24,22 @@
 		F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD3292E87F60031ABFD /* APIConfiguration.swift */; };
 		F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD5292E8AE70031ABFD /* NetworkService.swift */; };
 		F4042FD8292E8F290031ABFD /* AllPairsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD7292E8F290031ABFD /* AllPairsModel.swift */; };
-		F4042FDA292E8F5A0031ABFD /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD9292E8F5A0031ABFD /* HomeTableViewCell.swift */; };
+		F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */; };
 		F4C2D1B029364B860058361D /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1AF29364B860058361D /* NVActivityIndicatorView */; };
 		F4C2D1B229364B860058361D /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B129364B860058361D /* NVActivityIndicatorViewExtended */; };
 		F4C2D1B529364ECD0058361D /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B429364ECD0058361D /* SnackBar */; };
 		F4C2D1B8293664170058361D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */; };
+		F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */; };
+		F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BD293F7C450058361D /* DatabaseManager.swift */; };
+		F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */; };
+		F4C2D1C2293F94500058361D /* CapstoneSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C1293F94500058361D /* CapstoneSnackbar.swift */; };
+		F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C4293F96E10058361D /* DetailViewController.swift */; };
+		F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C6293F97190058361D /* DetailViewModel.swift */; };
+		F4C2D1C9293F971F0058361D /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C8293F971F0058361D /* DetailProtocol.swift */; };
+		F4C2D1CB293F985C0058361D /* DetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1CA293F985C0058361D /* DetailRepo.swift */; };
+		F4C2D1CD293F9B610058361D /* OrderBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1CC293F9B610058361D /* OrderBookModel.swift */; };
+		F4C2D1D2293FA0FF0058361D /* DepthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1D1293FA0FF0058361D /* DepthModel.swift */; };
+		F4C2D1D5293FA2060058361D /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1D4293FA2060058361D /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +58,17 @@
 		F4042FD3292E87F60031ABFD /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		F4042FD5292E8AE70031ABFD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F4042FD7292E8F290031ABFD /* AllPairsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPairsModel.swift; sourceTree = "<group>"; };
-		F4042FD9292E8F5A0031ABFD /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneTableViewCell.swift; sourceTree = "<group>"; };
+		F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F4C2D1BD293F7C450058361D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteEmptyView.swift; sourceTree = "<group>"; };
+		F4C2D1C1293F94500058361D /* CapstoneSnackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneSnackbar.swift; sourceTree = "<group>"; };
+		F4C2D1C4293F96E10058361D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4C2D1C6293F97190058361D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F4C2D1C8293F971F0058361D /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
+		F4C2D1CA293F985C0058361D /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
+		F4C2D1CC293F9B610058361D /* OrderBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookModel.swift; sourceTree = "<group>"; };
+		F4C2D1D1293FA0FF0058361D /* DepthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +80,7 @@
 				F4C2D1B8293664170058361D /* IQKeyboardManagerSwift in Frameworks */,
 				F4C2D1B029364B860058361D /* NVActivityIndicatorView in Frameworks */,
 				F4C2D1B529364ECD0058361D /* SnackBar in Frameworks */,
+				F4C2D1D5293FA2060058361D /* Charts in Frameworks */,
 				F4042FB9292E64CF0031ABFD /* Stevia in Frameworks */,
 				F4C2D1B229364B860058361D /* NVActivityIndicatorViewExtended in Frameworks */,
 				F4042FC5292E6BEF0031ABFD /* SDWebImage in Frameworks */,
@@ -88,6 +110,7 @@
 		F4042FA1292E60E60031ABFD /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2D1BC293F7A0B0058361D /* Shared */,
 				F4042FC7292E7CB90031ABFD /* Extension */,
 				F4042FB6292E61F10031ABFD /* App */,
 				F4042FBD292E64E10031ABFD /* Module */,
@@ -113,6 +136,8 @@
 		F4042FBD292E64E10031ABFD /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2D1C3293F96D60058361D /* Detail */,
+				F4C2D1B9293F77B10058361D /* Favorite */,
 				F4042FC6292E7BD50031ABFD /* Home */,
 			);
 			path = Module;
@@ -122,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				F4042FD7292E8F290031ABFD /* AllPairsModel.swift */,
+				F4C2D1CC293F9B610058361D /* OrderBookModel.swift */,
+				F4C2D1D1293FA0FF0058361D /* DepthModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +156,7 @@
 		F4042FBF292E64ED0031ABFD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2D1BD293F7C450058361D /* DatabaseManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -139,7 +167,6 @@
 				F4042FCC292E83840031ABFD /* HomeProtocols.swift */,
 				F4042FA6292E60E60031ABFD /* HomeViewController.swift */,
 				F4042FCA292E836C0031ABFD /* HomeViewModel.swift */,
-				F4042FD9292E8F5A0031ABFD /* HomeTableViewCell.swift */,
 				F4042FCE292E84320031ABFD /* HomeRepo.swift */,
 			);
 			path = Home;
@@ -161,6 +188,35 @@
 				F4042FD5292E8AE70031ABFD /* NetworkService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F4C2D1B9293F77B10058361D /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */,
+				F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		F4C2D1BC293F7A0B0058361D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */,
+				F4C2D1C1293F94500058361D /* CapstoneSnackbar.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F4C2D1C3293F96D60058361D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F4C2D1C4293F96E10058361D /* DetailViewController.swift */,
+				F4C2D1C6293F97190058361D /* DetailViewModel.swift */,
+				F4C2D1C8293F971F0058361D /* DetailProtocol.swift */,
+				F4C2D1CA293F985C0058361D /* DetailRepo.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +244,7 @@
 				F4C2D1B129364B860058361D /* NVActivityIndicatorViewExtended */,
 				F4C2D1B429364ECD0058361D /* SnackBar */,
 				F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */,
+				F4C2D1D4293FA2060058361D /* Charts */,
 			);
 			productName = CapstoneProject;
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
@@ -225,6 +282,7 @@
 				F4C2D1AE29364B860058361D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar" */,
 				F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				F4C2D1D3293FA2060058361D /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
@@ -252,17 +310,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C2D1CD293F9B610058361D /* OrderBookModel.swift in Sources */,
 				F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */,
+				F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */,
 				F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */,
 				F4042FC9292E7D0B0031ABFD /* UITableView+Ext.swift in Sources */,
+				F4C2D1C2293F94500058361D /* CapstoneSnackbar.swift in Sources */,
 				F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */,
 				F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */,
 				F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */,
-				F4042FDA292E8F5A0031ABFD /* HomeTableViewCell.swift in Sources */,
+				F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */,
+				F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */,
 				F4042FD2292E87E00031ABFD /* NetworkProtocol.swift in Sources */,
 				F4042FCD292E83840031ABFD /* HomeProtocols.swift in Sources */,
+				F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */,
+				F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */,
+				F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */,
 				F4042FD8292E8F290031ABFD /* AllPairsModel.swift in Sources */,
+				F4C2D1D2293FA0FF0058361D /* DepthModel.swift in Sources */,
+				F4C2D1CB293F985C0058361D /* DetailRepo.swift in Sources */,
 				F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */,
+				F4C2D1C9293F971F0058361D /* DetailProtocol.swift in Sources */,
 				F4042FCF292E84320031ABFD /* HomeRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +603,14 @@
 				kind = branch;
 			};
 		};
+		F4C2D1D3293FA2060058361D /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -577,6 +653,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		F4C2D1D4293FA2060058361D /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C2D1D3293FA2060058361D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
