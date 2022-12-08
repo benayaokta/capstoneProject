@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B0B32129423A0A007442C9 /* Entity */,
-				F4B0B32029423A02007442C9 /* Domain */,
+				F4B0B32029423A02007442C9 /* ResponseModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,12 +191,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		F4B0B32029423A02007442C9 /* Domain */ = {
+		F4B0B32029423A02007442C9 /* ResponseModel */ = {
 			isa = PBXGroup;
 			children = (
 				F4042FD7292E8F290031ABFD /* AllPairsModel.swift */,
 			);
-			path = Domain;
+			path = ResponseModel;
 			sourceTree = "<group>";
 		};
 		F4B0B32129423A0A007442C9 /* Entity */ = {
