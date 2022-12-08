@@ -15,6 +15,7 @@ struct AllPairs: Codable {
     let tradeFeePercent: Double
     let urlLogoPNG: String
     let isMaintenance: Int
+    let coinGeckoID: String?
     
     enum CodingKeys: String, CodingKey {
         case coinID = "id"
@@ -34,9 +35,10 @@ struct AllPairs: Codable {
         case tradeFeePercent = "trade_fee_percent"
         case urlLogoPNG = "url_logo_png"
         case isMaintenance = "is_maintenance"
+        case coinGeckoID = "coingecko_id"
     }
     
-    init(coinID: String, coinSymbol: String, baseCurrency: String, tradedCurrency: String, tradedCurrencyUnit: String, coinDescription: String, tickerID: String, volumePrecision: Int, pricePrecision: Int, priceRound: Int, pricescale: Int, tradeMinBaseCurrency: Int, tradeMinTradedCurrency: Double, hasMemo: Bool, tradeFeePercent: Double, urlLogoPNG: String, isMaintenance: Int) {
+    init(coinID: String, coinSymbol: String, baseCurrency: String, tradedCurrency: String, tradedCurrencyUnit: String, coinDescription: String, tickerID: String, volumePrecision: Int, pricePrecision: Int, priceRound: Int, pricescale: Int, tradeMinBaseCurrency: Int, tradeMinTradedCurrency: Double, hasMemo: Bool, tradeFeePercent: Double, urlLogoPNG: String, isMaintenance: Int, coinGeckoID: String? = nil) {
         self.coinID = coinID
         self.coinSymbol = coinSymbol
         self.baseCurrency = baseCurrency
@@ -54,6 +56,7 @@ struct AllPairs: Codable {
         self.tradeFeePercent = tradeFeePercent
         self.urlLogoPNG = urlLogoPNG
         self.isMaintenance = isMaintenance
+        self.coinGeckoID = coinGeckoID
     }
     
 }

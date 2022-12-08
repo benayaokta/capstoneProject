@@ -8,29 +8,36 @@
 import UIKit
 import Stevia
 import SDWebImage
+import Combine
 
 final class FavoriteViewController: UIViewController {
     
     private let favoriteTableView: UITableView = UITableView()
     private let emptyView: UIView = FavoriteEmptyView()
-    private var favoriteData: [AllPairs] = [AllPairs]()
+    private var favoriteData: [AllPairEntity] = [AllPairEntity]()
+    private var viewModel: FavoriteViewModelProtocol!
+    private var cancellables: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        injection()
+        setupCombine()
         setupHierarchy()
         setupComponent()
-        populateFavorite()
+        viewModel.populateFavorite()
+    }
+    
+    private func injection() {
+        viewModel = FavoriteViewModel()
     }
     
     private func setupHierarchy() {
         view.subviews {
             favoriteTableView
-            emptyView
         }
         
         favoriteTableView.fillContainer()
-        
-        emptyView.fillContainer()
+        favoriteTableView.backgroundView = emptyView
     }
     
     private func setupComponent() {
@@ -41,21 +48,34 @@ final class FavoriteViewController: UIViewController {
         favoriteTableView.registerCellClass(type: CapstoneTableViewCell.self)
     }
     
-    private func populateFavorite() {
-        
-        if var data = DatabaseManager.shared.getData(type: [AllPairs].self, forKey: "favorite") {
-            favoriteData = data
-            emptyView.isHidden = true
-            favoriteTableView.reloadData()
-        } else {
-            emptyView.isHidden = false
-        }
+    private func setupCombine() {
+        viewModel.favoriteArrayPublisher
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { [weak self] value in
+                guard let self else { return }
+                if value.isEmpty {
+                    self.favoriteTableView.backgroundView = self.emptyView
+                } else {
+                    self.favoriteTableView.backgroundView = nil
+                }
+                self.favoriteTableView.reloadData()
+            }).store(in: &cancellables)
     }
 }
 
 extension FavoriteViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(favoriteData[indexPath.row])
+        viewModel.goToDetail(pair: viewModel.favoriteList[indexPath.row], from: self)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .normal, title: "Remove from favorite") { _, _, completionHandler in
+            self.viewModel.removeFromFavorite(pair: self.viewModel.favoriteList[indexPath.row])
+            completionHandler(true)
+        }
+        action.backgroundColor = .systemRed
+        
+        return UISwipeActionsConfiguration(actions: [action])
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -70,19 +90,19 @@ extension FavoriteViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favoriteData.count
+        return viewModel.favoriteList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueCell(withType: CapstoneTableViewCell.self, for: indexPath) as? CapstoneTableViewCell else { return UITableViewCell() }
-        let cryptoData: AllPairs = favoriteData[indexPath.row]
+        let cryptoData: AllPairEntity = viewModel.favoriteList[indexPath.row]
         
-        cell.coinDesc.text = cryptoData.coinDescription
+        cell.coinDesc.text = cryptoData.description
         cell.coinImage.sd_imageIndicator = SDWebImageActivityIndicator.gray
-        cell.coinImage.sd_setImage(with: URL(string: cryptoData.urlLogoPNG), placeholderImage: UIImage(), options: [.progressiveLoad])
-        cell.coinCurrencyUnit.text = cryptoData.tradedCurrencyUnit
+        cell.coinImage.sd_setImage(with: URL(string: cryptoData.imageURL), placeholderImage: UIImage(), options: [.progressiveLoad])
+        cell.coinCurrencyUnit.text = cryptoData.tradeCurrencyUnit
         
-        if cryptoData.isMaintenance == 1 {
+        if cryptoData.isMaintenance {
             cell.setMaintenanceView()
         } else {
             cell.setNormalCell()

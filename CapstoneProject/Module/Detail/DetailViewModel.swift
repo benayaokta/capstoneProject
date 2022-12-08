@@ -5,25 +5,19 @@
 //  Created by Benaya Oktavianus on 06/12/22.
 //
 
-import Foundation
+import UIKit
 
 final class DetailViewModel: DetailViewModelProtocol {
-    let repo: DetailRepo
     
-    init(repo: DetailRepo) {
-        self.repo = repo
+    init() {
+        
     }
-    
-    func getOrderBook(id: String) {
-        repo.fetchOrderBook(id: id)
+
+    func goToCoinGecko(id: String) {
+        guard let url = URL(string: "https://www.coingecko.com/en/coins/\(id)") else { return }
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
     }
-    
-    func getTicker() {
-        repo.fetchTicker()
-    }
-    
-    func getDepth(id: String) {
-        repo.fetchDepth(id: id)
-    }
-    
+
 }

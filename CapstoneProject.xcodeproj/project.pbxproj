@@ -19,12 +19,13 @@
 		F4042FC9292E7D0B0031ABFD /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FC8292E7D0B0031ABFD /* UITableView+Ext.swift */; };
 		F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FCA292E836C0031ABFD /* HomeViewModel.swift */; };
 		F4042FCD292E83840031ABFD /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FCC292E83840031ABFD /* HomeProtocols.swift */; };
-		F4042FCF292E84320031ABFD /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FCE292E84320031ABFD /* HomeRepo.swift */; };
 		F4042FD2292E87E00031ABFD /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD1292E87E00031ABFD /* NetworkProtocol.swift */; };
 		F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD3292E87F60031ABFD /* APIConfiguration.swift */; };
 		F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD5292E8AE70031ABFD /* NetworkService.swift */; };
 		F4042FD8292E8F290031ABFD /* AllPairsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD7292E8F290031ABFD /* AllPairsModel.swift */; };
 		F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */; };
+		F4B0B31D2942364A007442C9 /* AllPairEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B0B31C2942364A007442C9 /* AllPairEntity.swift */; };
+		F4B0B31F2942378F007442C9 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B0B31E2942378F007442C9 /* Int+Ext.swift */; };
 		F4C2D1B029364B860058361D /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1AF29364B860058361D /* NVActivityIndicatorView */; };
 		F4C2D1B229364B860058361D /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B129364B860058361D /* NVActivityIndicatorViewExtended */; };
 		F4C2D1B529364ECD0058361D /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B429364ECD0058361D /* SnackBar */; };
@@ -36,10 +37,10 @@
 		F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C4293F96E10058361D /* DetailViewController.swift */; };
 		F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C6293F97190058361D /* DetailViewModel.swift */; };
 		F4C2D1C9293F971F0058361D /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C8293F971F0058361D /* DetailProtocol.swift */; };
-		F4C2D1CB293F985C0058361D /* DetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1CA293F985C0058361D /* DetailRepo.swift */; };
-		F4C2D1CD293F9B610058361D /* OrderBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1CC293F9B610058361D /* OrderBookModel.swift */; };
-		F4C2D1D2293FA0FF0058361D /* DepthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1D1293FA0FF0058361D /* DepthModel.swift */; };
 		F4C2D1D5293FA2060058361D /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1D4293FA2060058361D /* Charts */; };
+		F4C2D1D829420B160058361D /* UIImageColors in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1D729420B160058361D /* UIImageColors */; };
+		F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1D9294212180058361D /* FavoriteProtocols.swift */; };
+		F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,12 +54,13 @@
 		F4042FC8292E7D0B0031ABFD /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		F4042FCA292E836C0031ABFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F4042FCC292E83840031ABFD /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		F4042FCE292E84320031ABFD /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4042FD1292E87E00031ABFD /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		F4042FD3292E87F60031ABFD /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		F4042FD5292E8AE70031ABFD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F4042FD7292E8F290031ABFD /* AllPairsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPairsModel.swift; sourceTree = "<group>"; };
 		F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneTableViewCell.swift; sourceTree = "<group>"; };
+		F4B0B31C2942364A007442C9 /* AllPairEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPairEntity.swift; sourceTree = "<group>"; };
+		F4B0B31E2942378F007442C9 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		F4C2D1BD293F7C450058361D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteEmptyView.swift; sourceTree = "<group>"; };
@@ -66,9 +68,8 @@
 		F4C2D1C4293F96E10058361D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F4C2D1C6293F97190058361D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F4C2D1C8293F971F0058361D /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
-		F4C2D1CA293F985C0058361D /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
-		F4C2D1CC293F9B610058361D /* OrderBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookModel.swift; sourceTree = "<group>"; };
-		F4C2D1D1293FA0FF0058361D /* DepthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthModel.swift; sourceTree = "<group>"; };
+		F4C2D1D9294212180058361D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
+		F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 				F4C2D1B529364ECD0058361D /* SnackBar in Frameworks */,
 				F4C2D1D5293FA2060058361D /* Charts in Frameworks */,
 				F4042FB9292E64CF0031ABFD /* Stevia in Frameworks */,
+				F4C2D1D829420B160058361D /* UIImageColors in Frameworks */,
 				F4C2D1B229364B860058361D /* NVActivityIndicatorViewExtended in Frameworks */,
 				F4042FC5292E6BEF0031ABFD /* SDWebImage in Frameworks */,
 				F4042FBC292E64DE0031ABFD /* Alamofire in Frameworks */,
@@ -146,9 +148,8 @@
 		F4042FBE292E64E70031ABFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F4042FD7292E8F290031ABFD /* AllPairsModel.swift */,
-				F4C2D1CC293F9B610058361D /* OrderBookModel.swift */,
-				F4C2D1D1293FA0FF0058361D /* DepthModel.swift */,
+				F4B0B32129423A0A007442C9 /* Entity */,
+				F4B0B32029423A02007442C9 /* Domain */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,7 +168,6 @@
 				F4042FCC292E83840031ABFD /* HomeProtocols.swift */,
 				F4042FA6292E60E60031ABFD /* HomeViewController.swift */,
 				F4042FCA292E836C0031ABFD /* HomeViewModel.swift */,
-				F4042FCE292E84320031ABFD /* HomeRepo.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -176,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F4042FC8292E7D0B0031ABFD /* UITableView+Ext.swift */,
+				F4B0B31E2942378F007442C9 /* Int+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -190,10 +191,28 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		F4B0B32029423A02007442C9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F4042FD7292E8F290031ABFD /* AllPairsModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F4B0B32129423A0A007442C9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F4B0B31C2942364A007442C9 /* AllPairEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		F4C2D1B9293F77B10058361D /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2D1D9294212180058361D /* FavoriteProtocols.swift */,
 				F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */,
+				F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */,
 				F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */,
 			);
 			path = Favorite;
@@ -211,10 +230,9 @@
 		F4C2D1C3293F96D60058361D /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2D1C8293F971F0058361D /* DetailProtocol.swift */,
 				F4C2D1C4293F96E10058361D /* DetailViewController.swift */,
 				F4C2D1C6293F97190058361D /* DetailViewModel.swift */,
-				F4C2D1C8293F971F0058361D /* DetailProtocol.swift */,
-				F4C2D1CA293F985C0058361D /* DetailRepo.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 				F4C2D1B429364ECD0058361D /* SnackBar */,
 				F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */,
 				F4C2D1D4293FA2060058361D /* Charts */,
+				F4C2D1D729420B160058361D /* UIImageColors */,
 			);
 			productName = CapstoneProject;
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
@@ -283,6 +302,7 @@
 				F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar" */,
 				F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				F4C2D1D3293FA2060058361D /* XCRemoteSwiftPackageReference "Charts" */,
+				F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */,
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
@@ -310,13 +330,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C2D1CD293F9B610058361D /* OrderBookModel.swift in Sources */,
 				F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */,
+				F4B0B31D2942364A007442C9 /* AllPairEntity.swift in Sources */,
 				F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */,
 				F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */,
+				F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */,
 				F4042FC9292E7D0B0031ABFD /* UITableView+Ext.swift in Sources */,
 				F4C2D1C2293F94500058361D /* CapstoneSnackbar.swift in Sources */,
 				F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */,
+				F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */,
 				F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */,
 				F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */,
 				F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */,
@@ -327,11 +349,9 @@
 				F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */,
 				F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */,
 				F4042FD8292E8F290031ABFD /* AllPairsModel.swift in Sources */,
-				F4C2D1D2293FA0FF0058361D /* DepthModel.swift in Sources */,
-				F4C2D1CB293F985C0058361D /* DetailRepo.swift in Sources */,
 				F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */,
 				F4C2D1C9293F971F0058361D /* DetailProtocol.swift in Sources */,
-				F4042FCF292E84320031ABFD /* HomeRepo.swift in Sources */,
+				F4B0B31F2942378F007442C9 /* Int+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +631,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jathu/UIImageColors";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -658,6 +686,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4C2D1D3293FA2060058361D /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		F4C2D1D729420B160058361D /* UIImageColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */;
+			productName = UIImageColors;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

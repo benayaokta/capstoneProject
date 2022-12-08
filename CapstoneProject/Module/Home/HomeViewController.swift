@@ -16,9 +16,8 @@ class HomeViewController: UIViewController {
     
     private let tableView: UITableView = UITableView(frame: .zero, style: .plain)
     private var cancellables: Set<AnyCancellable> = []
-    private var viewModel: HomeViewModelProtocol?
-    private var data: [AllPairs] = [AllPairs]()
-    private var filteredData: [AllPairs] = [AllPairs]()
+    private var viewModel: HomeViewModelProtocol!
+    private var filteredData: [AllPairEntity] = [AllPairEntity]()
     private var refreshControl: UIRefreshControl = UIRefreshControl()
     private let indicator: NVActivityIndicatorView = NVActivityIndicatorView(frame: .zero, type: .circleStrokeSpin, color: .black, padding: .zero)
     private let searchController = UISearchController(searchResultsController: nil)
@@ -32,12 +31,11 @@ class HomeViewController: UIViewController {
         setupStyle()
         setupComponent()
         setupCombine()
-        indicator.startAnimating()
         getAllPairs()
     }
     
     private func injection() {
-        viewModel = HomeViewModel(repo: NewHomeRepo())
+        viewModel = HomeViewModel()
     }
     
     private func setupHierarchy() {
@@ -72,9 +70,6 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func goToFavorite() {
-        print("go to favorite")
-//        DatabaseManager.shared.setFavorite(String: "tes tes tes")
-//        DatabaseManager.shared.deleteFavorite()
         self.navigationController?.pushViewController(FavoriteViewController(), animated: true)
     }
     
@@ -83,29 +78,9 @@ class HomeViewController: UIViewController {
     }
     
     private func setupCombine() {
-//        let _ = message
-//            .sink { error in
-//                print("error \(error)")
-//            } receiveValue: { value in
-//                print("value \(value)")
-//            }.store(in: &cancellables)
-//
-//        let newSubs = NotificationCenter.Publisher(center: .default, name: Notification.Name("testes"))
-//            .map({ ($0.object as? Int) ?? 0 })
-//
-//
-//        newSubs.sink { [weak self] value in
-//            print("value notificatin center \(value)")
-//            if value % 2 != 0 {
-//                self?.tableView.backgroundColor = .red
-//            } else {
-//                self?.tableView.backgroundColor = .blue
-//            }
-//        }.store(in: &cancellables)
-        
-        let loading = viewModel?.isLoading
+        let loading = viewModel.isLoading
             .receive(on: RunLoop.main)
-        loading?.sink(receiveValue: { [weak self] isLoading in
+        loading.sink(receiveValue: { [weak self] isLoading in
             guard let self else { return }
             if isLoading {
                 self.indicator.startAnimating()
@@ -126,69 +101,49 @@ class HomeViewController: UIViewController {
         search.sink { [weak self] text in
             guard let self else { return }
             if text.isEmpty {
-                self.filteredData = self.data
+                self.filteredData = self.viewModel.data
             } else {
-                self.filteredData = self.data.filter({$0.coinID.contains(text) || $0.coinDescription.contains(text) || $0.coinSymbol.contains(text)})
+                self.filteredData = self.viewModel.data.filter({$0.coinID.contains(text) || $0.description.contains(text) || $0.coinSymbol.contains(text)})
             }
             self.tableView.reloadData()
+        }.store(in: &cancellables)
+        
+        let _ = viewModel.errorSnackbar.sink { [weak self] string in
+            guard let self else { return }
+            CapstoneErrorSnackbar.make(in: self.view, message: "\(string)", duration: .lengthShort).show()
+        }.store(in: &cancellables)
+        
+        let _ = viewModel.normalSnackbar.sink { [weak self] string in
+            guard let self else { return }
+            CapstoneSnackbar.make(in: self.view, message: "\(string)", duration: .lengthShort).show()
         }.store(in: &cancellables)
         
     }
     
     private func getAllPairs() {
-        viewModel?.getAllPairs()
+        viewModel.getAllPairs()
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { [weak self] completion in
                 guard let self else { return }
                 switch completion {
                 case .failure(let error):
-                    SnackBar.make(in: self.view, message: "\(error)", duration: .lengthShort).show()
+                    CapstoneErrorSnackbar.make(in: self.view, message: "\(error)", duration: .lengthShort).show()
                 case .finished:
                     return
                 }
         }, receiveValue: { [weak self] responseData in
             guard let self else { return }
-            self.data = responseData
-            self.filteredData = self.data
+            self.filteredData = responseData
             self.tableView.reloadData()
         }).store(in: &cancellables)
     }
-    
-    private func addToFavorite(index: IndexPath) {
-//        DatabaseManager.shared.setFavorite(pair: self.filteredData[index.row]) { success, error in
-//            guard error == nil else {
-//                if let error {
-//                    SnackBar.make(in: self.view, message: error.rawValue, duration: .lengthShort).show()
-//                }
-//                return
-//            }
-//            SnackBar.make(in: self.view, message: "Success add to favorite", duration: .lengthShort).show()
-//
-//        }
-        if var array = DatabaseManager.shared.getData(type: [AllPairs].self, forKey: "favorite") {
-            if !array.contains(where: {$0.coinID == self.filteredData[index.row].coinID}) {
-                array.append(self.filteredData[index.row])
-                DatabaseManager.shared.setData(value: array, key: "favorite")
-                CapstoneSnackbar.make(in: self.view, message: "Success add to favorite", duration: .lengthShort).show()
-
-            } else {
-                CapstoneSnackbar.make(in: self.view, message: "Item already on favorite", duration: .lengthShort).show()
-            }
-           
-        } else {
-            var newArray: [AllPairs] = [AllPairs]()
-            newArray.append(self.filteredData[index.row])
-            DatabaseManager.shared.setData(value: newArray, key: "favorite")
-            CapstoneSnackbar.make(in: self.view, message: "Success add to favorite", duration: .lengthShort).show()
-        }        
-    }
-    
 }
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .normal, title: "Add To Favorite") { _, _, completionHandler in
-            self.addToFavorite(index: indexPath)
+        let action = UIContextualAction(style: .normal, title: "Add to favorite") { _, _, completionHandler in
+            self.viewModel.addToFavorite(pair: self.filteredData[indexPath.row])
+            
             completionHandler(true)
         }
         action.backgroundColor = .systemBlue
@@ -202,8 +157,6 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        // go to detail
-        
         self.navigationController?.pushViewController(DetailViewController(data: self.filteredData[indexPath.row]), animated: true)
     }
     
@@ -220,14 +173,14 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueCell(withType: CapstoneTableViewCell.self, for: indexPath) as? CapstoneTableViewCell else { return UITableViewCell() }
-        let cryptoData: AllPairs = filteredData[indexPath.row]
+        let cryptoData: AllPairEntity = filteredData[indexPath.row]
         
-        cell.coinDesc.text = cryptoData.coinDescription
+        cell.coinDesc.text = cryptoData.description
         cell.coinImage.sd_imageIndicator = SDWebImageActivityIndicator.gray
-        cell.coinImage.sd_setImage(with: URL(string: cryptoData.urlLogoPNG), placeholderImage: UIImage(), options: [.progressiveLoad])
-        cell.coinCurrencyUnit.text = cryptoData.tradedCurrencyUnit
+        cell.coinImage.sd_setImage(with: URL(string: cryptoData.imageURL), placeholderImage: UIImage(), options: [.progressiveLoad])
+        cell.coinCurrencyUnit.text = cryptoData.tradeCurrencyUnit
         
-        if cryptoData.isMaintenance == 1 {
+        if cryptoData.isMaintenance {
             cell.setMaintenanceView()
         } else {
             cell.setNormalCell()

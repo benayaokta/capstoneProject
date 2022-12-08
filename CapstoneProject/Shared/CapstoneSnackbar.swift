@@ -16,3 +16,12 @@ final class CapstoneSnackbar: SnackBar {
         return style
     }
 }
+
+final class CapstoneErrorSnackbar: SnackBar {
+    override var style: SnackBarStyle {
+        var style = SnackBarStyle()
+        style.background = .systemRed
+        style.textColor = .white
+        return style
+    }
+}
