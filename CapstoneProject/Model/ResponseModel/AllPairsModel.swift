@@ -38,7 +38,24 @@ struct AllPairs: Codable {
         case coinGeckoID = "coingecko_id"
     }
     
-    init(coinID: String, coinSymbol: String, baseCurrency: String, tradedCurrency: String, tradedCurrencyUnit: String, coinDescription: String, tickerID: String, volumePrecision: Int, pricePrecision: Int, priceRound: Int, pricescale: Int, tradeMinBaseCurrency: Int, tradeMinTradedCurrency: Double, hasMemo: Bool, tradeFeePercent: Double, urlLogoPNG: String, isMaintenance: Int, coinGeckoID: String? = nil) {
+    init(coinID: String,
+         coinSymbol: String,
+         baseCurrency: String,
+         tradedCurrency: String,
+         tradedCurrencyUnit: String,
+         coinDescription: String,
+         tickerID: String,
+         volumePrecision: Int,
+         pricePrecision: Int,
+         priceRound: Int,
+         pricescale: Int,
+         tradeMinBaseCurrency: Int,
+         tradeMinTradedCurrency: Double,
+         hasMemo: Bool,
+         tradeFeePercent: Double,
+         urlLogoPNG: String,
+         isMaintenance: Int,
+         coinGeckoID: String? = nil) {
         self.coinID = coinID
         self.coinSymbol = coinSymbol
         self.baseCurrency = baseCurrency
