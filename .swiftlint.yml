@@ -1,0 +1,15 @@
+disabled_rules:
+    - force_cast
+    - trailing_whitespace
+    - vertical_whitespace
+    - trailing_newline
+    - redundant_discardable_let
+    - colon
+    
+line_length: 200
+    
+identifier_name:
+  min_length: # only min_length
+    error: 2
+
+reporter: "xcode"
