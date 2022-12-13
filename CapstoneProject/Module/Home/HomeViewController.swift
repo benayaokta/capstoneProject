@@ -66,11 +66,17 @@ class HomeViewController: UIViewController {
     }
     
     private func setupFavoriteButtonn() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(goToFavorite))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(goToProfile))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(goToFavorite))
     }
     
     @objc private func goToFavorite() {
         self.navigationController?.pushViewController(FavoriteViewController(), animated: true)
+    }
+    
+    @objc private func goToProfile() {
+        self.navigationController?.pushViewController(ProfileViewController(), animated: true)
     }
     
     @objc private func reloadData() {
