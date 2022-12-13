@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CFBD68110951F095320C733 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B56C70F934817999F95FAE /* Pods_CapstoneProject.framework */; };
+		5B8181332E39D36E48DF6EB5 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FB55C72948B7EC00790DC7 /* Pods_CapstoneProject.framework */; };
 		F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA2292E60E60031ABFD /* AppDelegate.swift */; };
 		F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA4292E60E60031ABFD /* SceneDelegate.swift */; };
 		F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA6292E60E60031ABFD /* HomeViewController.swift */; };
@@ -45,7 +46,20 @@
 		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
 		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
 		F4FB55B62948ABD200790DC7 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B52948ABD200790DC7 /* ProfileEntity.swift */; };
+		F4FB55BE2948B64C00790DC7 /* CapstoneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */; };
+		F4FB55C62948B68100790DC7 /* HomeUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */; };
+		F4FB55CA2948B85E00790DC7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4FB55C92948B85E00790DC7 /* SDWebImage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4042F97292E60E60031ABFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4042F9E292E60E60031ABFD;
+			remoteInfo = CapstoneProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		39B56C70F934817999F95FAE /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +95,10 @@
 		F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
 		F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		F4FB55B52948ABD200790DC7 /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
+		F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneProjectTests.swift; sourceTree = "<group>"; };
+		F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCaseTest.swift; sourceTree = "<group>"; };
+		F4FB55C72948B7EC00790DC7 /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +116,15 @@
 				F4042FC5292E6BEF0031ABFD /* SDWebImage in Frameworks */,
 				F4042FBC292E64DE0031ABFD /* Alamofire in Frameworks */,
 				3CFBD68110951F095320C733 /* Pods_CapstoneProject.framework in Frameworks */,
+				5B8181332E39D36E48DF6EB5 /* Pods_CapstoneProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FB55B82948B64C00790DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FB55CA2948B85E00790DC7 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +134,7 @@
 		1E2441BC5D92D2EBC42C5F19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4FB55C72948B7EC00790DC7 /* Pods_CapstoneProject.framework */,
 				39B56C70F934817999F95FAE /* Pods_CapstoneProject.framework */,
 			);
 			name = Frameworks;
@@ -125,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F4042FA1292E60E60031ABFD /* CapstoneProject */,
+				F4FB55BC2948B64C00790DC7 /* CapstoneProjectTests */,
 				F4042FA0292E60E60031ABFD /* Products */,
 				BAAFD3B2389FA76FCC2B04C8 /* Pods */,
 				1E2441BC5D92D2EBC42C5F19 /* Frameworks */,
@@ -135,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				F4042F9F292E60E60031ABFD /* CapstoneProject.app */,
+				F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,6 +309,23 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		F4FB55BC2948B64C00790DC7 /* CapstoneProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB55C42948B67000790DC7 /* Domain */,
+				F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */,
+			);
+			path = CapstoneProjectTests;
+			sourceTree = "<group>";
+		};
+		F4FB55C42948B67000790DC7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +359,27 @@
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F4FB55BA2948B64C00790DC7 /* CapstoneProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4FB55C12948B64D00790DC7 /* Build configuration list for PBXNativeTarget "CapstoneProjectTests" */;
+			buildPhases = (
+				F4FB55B72948B64C00790DC7 /* Sources */,
+				F4FB55B82948B64C00790DC7 /* Frameworks */,
+				F4FB55B92948B64C00790DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4FB55C02948B64C00790DC7 /* PBXTargetDependency */,
+			);
+			name = CapstoneProjectTests;
+			packageProductDependencies = (
+				F4FB55C92948B85E00790DC7 /* SDWebImage */,
+			);
+			productName = CapstoneProjectTests;
+			productReference = F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,6 +392,10 @@
 				TargetAttributes = {
 					F4042F9E292E60E60031ABFD = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					F4FB55BA2948B64C00790DC7 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F4042F9E292E60E60031ABFD;
 					};
 				};
 			};
@@ -342,7 +414,7 @@
 				F4042FC0292E67150031ABFD /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */,
 				F4042FC3292E6BEF0031ABFD /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				F4C2D1AE29364B860058361D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
-				F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar" */,
+				F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar.swift" */,
 				F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */,
 			);
@@ -351,6 +423,7 @@
 			projectRoot = "";
 			targets = (
 				F4042F9E292E60E60031ABFD /* CapstoneProject */,
+				F4FB55BA2948B64C00790DC7 /* CapstoneProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,6 +435,13 @@
 			files = (
 				F4042FAF292E60E80031ABFD /* LaunchScreen.storyboard in Resources */,
 				F4042FAC292E60E80031ABFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FB55B92948B64C00790DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +523,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4FB55B72948B64C00790DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FB55C62948B68100790DC7 /* HomeUseCaseTest.swift in Sources */,
+				F4FB55BE2948B64C00790DC7 /* CapstoneProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4FB55C02948B64C00790DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4042F9E292E60E60031ABFD /* CapstoneProject */;
+			targetProxy = F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4042FAD292E60E80031ABFD /* LaunchScreen.storyboard */ = {
@@ -633,6 +730,44 @@
 			};
 			name = Release;
 		};
+		F4FB55C22948B64D00790DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SCPNUJUC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.CapstoneProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapstoneProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CapstoneProject";
+			};
+			name = Debug;
+		};
+		F4FB55C32948B64D00790DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26SCPNUJUC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.CapstoneProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapstoneProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CapstoneProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -650,6 +785,15 @@
 			buildConfigurations = (
 				F4042FB4292E60E80031ABFD /* Debug */,
 				F4042FB5292E60E80031ABFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4FB55C12948B64D00790DC7 /* Build configuration list for PBXNativeTarget "CapstoneProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FB55C22948B64D00790DC7 /* Debug */,
+				F4FB55C32948B64D00790DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -697,7 +841,7 @@
 				kind = branch;
 			};
 		};
-		F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+		F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
 			requirement = {
@@ -756,7 +900,7 @@
 		};
 		F4C2D1B429364ECD0058361D /* SnackBar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar" */;
+			package = F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar.swift" */;
 			productName = SnackBar;
 		};
 		F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */ = {
@@ -768,6 +912,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */;
 			productName = UIImageColors;
+		};
+		F4FB55C92948B85E00790DC7 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4042FC3292E6BEF0031ABFD /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
