@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCE159793707383452934FCF /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899C0D2373AC36D1CCF22BB4 /* Pods_CapstoneProject.framework */; };
+		EEA88A53F9BF5EE78F86B830 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1DFF4739E99D1FC43E147B /* Pods_CapstoneProject.framework */; };
 		F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA2292E60E60031ABFD /* AppDelegate.swift */; };
 		F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA4292E60E60031ABFD /* SceneDelegate.swift */; };
 		F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA6292E60E60031ABFD /* HomeViewController.swift */; };
@@ -34,10 +34,10 @@
 		F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */; };
 		F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */; };
 		F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6782955A7470009DAC0 /* Stevia */; };
-		F4E2F67C2955A7580009DAC0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67B2955A7580009DAC0 /* Alamofire */; };
 		F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67E2955A76E0009DAC0 /* SDWebImage */; };
 		F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6812955A7870009DAC0 /* NVActivityIndicatorView */; };
 		F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6872955A8370009DAC0 /* SnackBar */; };
+		F4E2F68B2955A8DD0009DAC0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F68A2955A8DD0009DAC0 /* Alamofire */; };
 		F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */; };
 		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
 		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
@@ -57,9 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		899C0D2373AC36D1CCF22BB4 /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7129BB01F41EDFF42895277 /* Pods-CapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
-		E4BA92B02D7B101F34058D27 /* Pods-CapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
+		3C1DFF4739E99D1FC43E147B /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBECF12E859A24619C53CF2 /* Pods-CapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9DC55C29EAC03BE0BD828B65 /* Pods-CapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
 		F4042F9F292E60E60031ABFD /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4042FA2292E60E60031ABFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4042FA4292E60E60031ABFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,12 +101,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */,
-				F4E2F67C2955A7580009DAC0 /* Alamofire in Frameworks */,
+				F4E2F68B2955A8DD0009DAC0 /* Alamofire in Frameworks */,
 				F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */,
 				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
-				DCE159793707383452934FCF /* Pods_CapstoneProject.framework in Frameworks */,
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
+				EEA88A53F9BF5EE78F86B830 /* Pods_CapstoneProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,10 +120,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		905ACBDD045F51465840CB57 /* Frameworks */ = {
+		08DD657E24F4BABFC39A8551 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				899C0D2373AC36D1CCF22BB4 /* Pods_CapstoneProject.framework */,
+				3C1DFF4739E99D1FC43E147B /* Pods_CapstoneProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,8 +131,8 @@
 		BAAFD3B2389FA76FCC2B04C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C7129BB01F41EDFF42895277 /* Pods-CapstoneProject.debug.xcconfig */,
-				E4BA92B02D7B101F34058D27 /* Pods-CapstoneProject.release.xcconfig */,
+				6DBECF12E859A24619C53CF2 /* Pods-CapstoneProject.debug.xcconfig */,
+				9DC55C29EAC03BE0BD828B65 /* Pods-CapstoneProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 				F4FB55BC2948B64C00790DC7 /* CapstoneProjectTests */,
 				F4042FA0292E60E60031ABFD /* Products */,
 				BAAFD3B2389FA76FCC2B04C8 /* Pods */,
-				905ACBDD045F51465840CB57 /* Frameworks */,
+				08DD657E24F4BABFC39A8551 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -321,7 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4042FB3292E60E80031ABFD /* Build configuration list for PBXNativeTarget "CapstoneProject" */;
 			buildPhases = (
-				3E5F8780B8254FC17B627237 /* [CP] Check Pods Manifest.lock */,
+				0BDF0CE31A1AD82FB13493DC /* [CP] Check Pods Manifest.lock */,
 				F4042F9B292E60E60031ABFD /* Sources */,
 				F4042F9C292E60E60031ABFD /* Frameworks */,
 				F4042F9D292E60E60031ABFD /* Resources */,
@@ -335,10 +335,10 @@
 			packageProductDependencies = (
 				F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */,
 				F4E2F6782955A7470009DAC0 /* Stevia */,
-				F4E2F67B2955A7580009DAC0 /* Alamofire */,
 				F4E2F67E2955A76E0009DAC0 /* SDWebImage */,
 				F4E2F6812955A7870009DAC0 /* NVActivityIndicatorView */,
 				F4E2F6872955A8370009DAC0 /* SnackBar */,
+				F4E2F68A2955A8DD0009DAC0 /* Alamofire */,
 			);
 			productName = CapstoneProject;
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
@@ -358,8 +358,6 @@
 				F4FB55C02948B64C00790DC7 /* PBXTargetDependency */,
 			);
 			name = CapstoneProjectTests;
-			packageProductDependencies = (
-			);
 			productName = CapstoneProjectTests;
 			productReference = F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -395,10 +393,10 @@
 			packageReferences = (
 				F4E2F6742955A7360009DAC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				F4E2F6772955A7470009DAC0 /* XCRemoteSwiftPackageReference "Stevia" */,
-				F4E2F67A2955A7580009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F4E2F67D2955A76E0009DAC0 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				F4E2F6802955A7870009DAC0 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */,
+				F4E2F6892955A8DD0009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
@@ -430,7 +428,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E5F8780B8254FC17B627237 /* [CP] Check Pods Manifest.lock */ = {
+		0BDF0CE31A1AD82FB13493DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -652,7 +650,7 @@
 		};
 		F4042FB4292E60E80031ABFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7129BB01F41EDFF42895277 /* Pods-CapstoneProject.debug.xcconfig */;
+			baseConfigurationReference = 6DBECF12E859A24619C53CF2 /* Pods-CapstoneProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -683,7 +681,7 @@
 		};
 		F4042FB5292E60E80031ABFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4BA92B02D7B101F34058D27 /* Pods-CapstoneProject.release.xcconfig */;
+			baseConfigurationReference = 9DC55C29EAC03BE0BD828B65 /* Pods-CapstoneProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -799,14 +797,6 @@
 				kind = branch;
 			};
 		};
-		F4E2F67A2955A7580009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		F4E2F67D2955A76E0009DAC0 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -831,6 +821,14 @@
 				kind = branch;
 			};
 		};
+		F4E2F6892955A8DD0009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -843,11 +841,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4E2F6772955A7470009DAC0 /* XCRemoteSwiftPackageReference "Stevia" */;
 			productName = Stevia;
-		};
-		F4E2F67B2955A7580009DAC0 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4E2F67A2955A7580009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 		F4E2F67E2955A76E0009DAC0 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -863,6 +856,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */;
 			productName = SnackBar;
+		};
+		F4E2F68A2955A8DD0009DAC0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4E2F6892955A8DD0009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

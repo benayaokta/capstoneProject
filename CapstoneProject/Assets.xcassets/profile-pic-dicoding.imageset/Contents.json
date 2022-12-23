@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "profile-pic-dicoding.JPG",
+      "filename" : "image.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "profile-pic-dicoding 1.JPG",
+      "filename" : "image 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "profile-pic-dicoding 2.JPG",
+      "filename" : "image 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

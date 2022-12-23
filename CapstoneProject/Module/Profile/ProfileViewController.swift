@@ -47,7 +47,7 @@ class ProfileViewController: UIViewController {
         }
         
         profilePicture.centerHorizontally().Top == self.view.layoutMarginsGuide.Top + 20
-        profilePicture.width(<=160).height(<=240)
+        profilePicture.width(150).heightEqualsWidth()
         
         nameLabel.centerHorizontally().fillHorizontally(padding: 16).Top == profilePicture.Bottom + 16
         descriptionLabel.centerHorizontally().fillHorizontally(padding: 16).bottom(>=16).Top == nameLabel.Bottom + 16
