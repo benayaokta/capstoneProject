@@ -6,16 +6,7 @@
       "location" : "https://github.com/Alamofire/Alamofire",
       "state" : {
         "branch" : "master",
-        "revision" : "78424be314842833c04bc3bef5b72e85fff99204"
-      }
-    },
-    {
-      "identity" : "alamofirenetworkactivitylogger",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/konkab/AlamofireNetworkActivityLogger",
-      "state" : {
-        "branch" : "master",
-        "revision" : "8db9d4e27176905298e7215e3d800e349cdfa30b"
+        "revision" : "ce7f662709a152e840b130a158b9afef3402e146"
       }
     },
     {
@@ -70,15 +61,6 @@
       "state" : {
         "branch" : "master",
         "revision" : "8e3220a4ca1aa1bc731d6bde5a39b40d89483b30"
-      }
-    },
-    {
-      "identity" : "uiimagecolors",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jathu/UIImageColors",
-      "state" : {
-        "revision" : "e49e6c32ea556e9fa0109dc79686bea4a10d41a2",
-        "version" : "2.2.0"
       }
     }
   ],

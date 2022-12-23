@@ -7,17 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CFBD68110951F095320C733 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B56C70F934817999F95FAE /* Pods_CapstoneProject.framework */; };
-		5B8181332E39D36E48DF6EB5 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FB55C72948B7EC00790DC7 /* Pods_CapstoneProject.framework */; };
+		DCE159793707383452934FCF /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899C0D2373AC36D1CCF22BB4 /* Pods_CapstoneProject.framework */; };
 		F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA2292E60E60031ABFD /* AppDelegate.swift */; };
 		F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA4292E60E60031ABFD /* SceneDelegate.swift */; };
 		F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA6292E60E60031ABFD /* HomeViewController.swift */; };
 		F4042FAC292E60E80031ABFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4042FAB292E60E80031ABFD /* Assets.xcassets */; };
 		F4042FAF292E60E80031ABFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4042FAD292E60E80031ABFD /* LaunchScreen.storyboard */; };
-		F4042FB9292E64CF0031ABFD /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4042FB8292E64CF0031ABFD /* Stevia */; };
-		F4042FBC292E64DE0031ABFD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4042FBB292E64DE0031ABFD /* Alamofire */; };
-		F4042FC2292E67150031ABFD /* AlamofireNetworkActivityLogger in Frameworks */ = {isa = PBXBuildFile; productRef = F4042FC1292E67150031ABFD /* AlamofireNetworkActivityLogger */; };
-		F4042FC5292E6BEF0031ABFD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4042FC4292E6BEF0031ABFD /* SDWebImage */; };
 		F4042FC9292E7D0B0031ABFD /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FC8292E7D0B0031ABFD /* UITableView+Ext.swift */; };
 		F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FCA292E836C0031ABFD /* HomeViewModel.swift */; };
 		F4042FCD292E83840031ABFD /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FCC292E83840031ABFD /* HomeProtocols.swift */; };
@@ -28,10 +23,6 @@
 		F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */; };
 		F4B0B31D2942364A007442C9 /* AllPairEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B0B31C2942364A007442C9 /* AllPairEntity.swift */; };
 		F4B0B31F2942378F007442C9 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B0B31E2942378F007442C9 /* Int+Ext.swift */; };
-		F4C2D1B029364B860058361D /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1AF29364B860058361D /* NVActivityIndicatorView */; };
-		F4C2D1B229364B860058361D /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B129364B860058361D /* NVActivityIndicatorViewExtended */; };
-		F4C2D1B529364ECD0058361D /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B429364ECD0058361D /* SnackBar */; };
-		F4C2D1B8293664170058361D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */; };
 		F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */; };
 		F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BD293F7C450058361D /* DatabaseManager.swift */; };
 		F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */; };
@@ -39,16 +30,20 @@
 		F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C4293F96E10058361D /* DetailViewController.swift */; };
 		F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C6293F97190058361D /* DetailViewModel.swift */; };
 		F4C2D1C9293F971F0058361D /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C8293F971F0058361D /* DetailProtocol.swift */; };
-		F4C2D1D829420B160058361D /* UIImageColors in Frameworks */ = {isa = PBXBuildFile; productRef = F4C2D1D729420B160058361D /* UIImageColors */; };
 		F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1D9294212180058361D /* FavoriteProtocols.swift */; };
 		F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */; };
+		F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */; };
+		F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6782955A7470009DAC0 /* Stevia */; };
+		F4E2F67C2955A7580009DAC0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67B2955A7580009DAC0 /* Alamofire */; };
+		F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67E2955A76E0009DAC0 /* SDWebImage */; };
+		F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6812955A7870009DAC0 /* NVActivityIndicatorView */; };
+		F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6872955A8370009DAC0 /* SnackBar */; };
 		F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */; };
 		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
 		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
 		F4FB55B62948ABD200790DC7 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B52948ABD200790DC7 /* ProfileEntity.swift */; };
 		F4FB55BE2948B64C00790DC7 /* CapstoneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */; };
 		F4FB55C62948B68100790DC7 /* HomeUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */; };
-		F4FB55CA2948B85E00790DC7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4FB55C92948B85E00790DC7 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39B56C70F934817999F95FAE /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		568A08FFF76CE48A0845113E /* Pods-CapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
-		AEFE5EA512190EB4D6EC112B /* Pods-CapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
+		899C0D2373AC36D1CCF22BB4 /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7129BB01F41EDFF42895277 /* Pods-CapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E4BA92B02D7B101F34058D27 /* Pods-CapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
 		F4042F9F292E60E60031ABFD /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4042FA2292E60E60031ABFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4042FA4292E60E60031ABFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 		F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneProjectTests.swift; sourceTree = "<group>"; };
 		F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCaseTest.swift; sourceTree = "<group>"; };
-		F4FB55C72948B7EC00790DC7 /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,17 +100,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4042FC2292E67150031ABFD /* AlamofireNetworkActivityLogger in Frameworks */,
-				F4C2D1B8293664170058361D /* IQKeyboardManagerSwift in Frameworks */,
-				F4C2D1B029364B860058361D /* NVActivityIndicatorView in Frameworks */,
-				F4C2D1B529364ECD0058361D /* SnackBar in Frameworks */,
-				F4042FB9292E64CF0031ABFD /* Stevia in Frameworks */,
-				F4C2D1D829420B160058361D /* UIImageColors in Frameworks */,
-				F4C2D1B229364B860058361D /* NVActivityIndicatorViewExtended in Frameworks */,
-				F4042FC5292E6BEF0031ABFD /* SDWebImage in Frameworks */,
-				F4042FBC292E64DE0031ABFD /* Alamofire in Frameworks */,
-				3CFBD68110951F095320C733 /* Pods_CapstoneProject.framework in Frameworks */,
-				5B8181332E39D36E48DF6EB5 /* Pods_CapstoneProject.framework in Frameworks */,
+				F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */,
+				F4E2F67C2955A7580009DAC0 /* Alamofire in Frameworks */,
+				F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */,
+				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
+				DCE159793707383452934FCF /* Pods_CapstoneProject.framework in Frameworks */,
+				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
+				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,18 +114,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FB55CA2948B85E00790DC7 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E2441BC5D92D2EBC42C5F19 /* Frameworks */ = {
+		905ACBDD045F51465840CB57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4FB55C72948B7EC00790DC7 /* Pods_CapstoneProject.framework */,
-				39B56C70F934817999F95FAE /* Pods_CapstoneProject.framework */,
+				899C0D2373AC36D1CCF22BB4 /* Pods_CapstoneProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,8 +131,8 @@
 		BAAFD3B2389FA76FCC2B04C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				568A08FFF76CE48A0845113E /* Pods-CapstoneProject.debug.xcconfig */,
-				AEFE5EA512190EB4D6EC112B /* Pods-CapstoneProject.release.xcconfig */,
+				C7129BB01F41EDFF42895277 /* Pods-CapstoneProject.debug.xcconfig */,
+				E4BA92B02D7B101F34058D27 /* Pods-CapstoneProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -156,7 +144,7 @@
 				F4FB55BC2948B64C00790DC7 /* CapstoneProjectTests */,
 				F4042FA0292E60E60031ABFD /* Products */,
 				BAAFD3B2389FA76FCC2B04C8 /* Pods */,
-				1E2441BC5D92D2EBC42C5F19 /* Frameworks */,
+				905ACBDD045F51465840CB57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -333,7 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4042FB3292E60E80031ABFD /* Build configuration list for PBXNativeTarget "CapstoneProject" */;
 			buildPhases = (
-				9D5B4C014EC1D79B3C6214D5 /* [CP] Check Pods Manifest.lock */,
+				3E5F8780B8254FC17B627237 /* [CP] Check Pods Manifest.lock */,
 				F4042F9B292E60E60031ABFD /* Sources */,
 				F4042F9C292E60E60031ABFD /* Frameworks */,
 				F4042F9D292E60E60031ABFD /* Resources */,
@@ -345,15 +333,12 @@
 			);
 			name = CapstoneProject;
 			packageProductDependencies = (
-				F4042FB8292E64CF0031ABFD /* Stevia */,
-				F4042FBB292E64DE0031ABFD /* Alamofire */,
-				F4042FC1292E67150031ABFD /* AlamofireNetworkActivityLogger */,
-				F4042FC4292E6BEF0031ABFD /* SDWebImage */,
-				F4C2D1AF29364B860058361D /* NVActivityIndicatorView */,
-				F4C2D1B129364B860058361D /* NVActivityIndicatorViewExtended */,
-				F4C2D1B429364ECD0058361D /* SnackBar */,
-				F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */,
-				F4C2D1D729420B160058361D /* UIImageColors */,
+				F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */,
+				F4E2F6782955A7470009DAC0 /* Stevia */,
+				F4E2F67B2955A7580009DAC0 /* Alamofire */,
+				F4E2F67E2955A76E0009DAC0 /* SDWebImage */,
+				F4E2F6812955A7870009DAC0 /* NVActivityIndicatorView */,
+				F4E2F6872955A8370009DAC0 /* SnackBar */,
 			);
 			productName = CapstoneProject;
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
@@ -374,7 +359,6 @@
 			);
 			name = CapstoneProjectTests;
 			packageProductDependencies = (
-				F4FB55C92948B85E00790DC7 /* SDWebImage */,
 			);
 			productName = CapstoneProjectTests;
 			productReference = F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */;
@@ -409,14 +393,12 @@
 			);
 			mainGroup = F4042F96292E60E60031ABFD;
 			packageReferences = (
-				F4042FB7292E64CF0031ABFD /* XCRemoteSwiftPackageReference "Stevia" */,
-				F4042FBA292E64DE0031ABFD /* XCRemoteSwiftPackageReference "Alamofire" */,
-				F4042FC0292E67150031ABFD /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */,
-				F4042FC3292E6BEF0031ABFD /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				F4C2D1AE29364B860058361D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
-				F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar.swift" */,
-				F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */,
+				F4E2F6742955A7360009DAC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				F4E2F6772955A7470009DAC0 /* XCRemoteSwiftPackageReference "Stevia" */,
+				F4E2F67A2955A7580009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F4E2F67D2955A76E0009DAC0 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F4E2F6802955A7870009DAC0 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */,
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
@@ -448,7 +430,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9D5B4C014EC1D79B3C6214D5 /* [CP] Check Pods Manifest.lock */ = {
+		3E5F8780B8254FC17B627237 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -670,7 +652,7 @@
 		};
 		F4042FB4292E60E80031ABFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 568A08FFF76CE48A0845113E /* Pods-CapstoneProject.debug.xcconfig */;
+			baseConfigurationReference = C7129BB01F41EDFF42895277 /* Pods-CapstoneProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -701,7 +683,7 @@
 		};
 		F4042FB5292E60E80031ABFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEFE5EA512190EB4D6EC112B /* Pods-CapstoneProject.release.xcconfig */;
+			baseConfigurationReference = E4BA92B02D7B101F34058D27 /* Pods-CapstoneProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -801,55 +783,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F4042FB7292E64CF0031ABFD /* XCRemoteSwiftPackageReference "Stevia" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/freshOS/Stevia";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F4042FBA292E64DE0031ABFD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F4042FC0292E67150031ABFD /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/konkab/AlamofireNetworkActivityLogger";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F4042FC3292E6BEF0031ABFD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F4C2D1AE29364B860058361D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		F4E2F6742955A7360009DAC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
 			requirement = {
@@ -857,66 +791,78 @@
 				kind = branch;
 			};
 		};
-		F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */ = {
+		F4E2F6772955A7470009DAC0 /* XCRemoteSwiftPackageReference "Stevia" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jathu/UIImageColors";
+			repositoryURL = "https://github.com/freshOS/Stevia";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4E2F67A2955A7580009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4E2F67D2955A76E0009DAC0 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4E2F6802955A7870009DAC0 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F4042FB8292E64CF0031ABFD /* Stevia */ = {
+		F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4042FB7292E64CF0031ABFD /* XCRemoteSwiftPackageReference "Stevia" */;
-			productName = Stevia;
-		};
-		F4042FBB292E64DE0031ABFD /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4042FBA292E64DE0031ABFD /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		F4042FC1292E67150031ABFD /* AlamofireNetworkActivityLogger */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4042FC0292E67150031ABFD /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */;
-			productName = AlamofireNetworkActivityLogger;
-		};
-		F4042FC4292E6BEF0031ABFD /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4042FC3292E6BEF0031ABFD /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		F4C2D1AF29364B860058361D /* NVActivityIndicatorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4C2D1AE29364B860058361D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorView;
-		};
-		F4C2D1B129364B860058361D /* NVActivityIndicatorViewExtended */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4C2D1AE29364B860058361D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorViewExtended;
-		};
-		F4C2D1B429364ECD0058361D /* SnackBar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4C2D1B329364ECD0058361D /* XCRemoteSwiftPackageReference "SnackBar.swift" */;
-			productName = SnackBar;
-		};
-		F4C2D1B7293664170058361D /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4C2D1B6293664170058361D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = F4E2F6742955A7360009DAC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		F4C2D1D729420B160058361D /* UIImageColors */ = {
+		F4E2F6782955A7470009DAC0 /* Stevia */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4C2D1D629420B160058361D /* XCRemoteSwiftPackageReference "UIImageColors" */;
-			productName = UIImageColors;
+			package = F4E2F6772955A7470009DAC0 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
 		};
-		F4FB55C92948B85E00790DC7 /* SDWebImage */ = {
+		F4E2F67B2955A7580009DAC0 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4042FC3292E6BEF0031ABFD /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = F4E2F67A2955A7580009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F4E2F67E2955A76E0009DAC0 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4E2F67D2955A76E0009DAC0 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		F4E2F6812955A7870009DAC0 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4E2F6802955A7870009DAC0 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		F4E2F6872955A8370009DAC0 /* SnackBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */;
+			productName = SnackBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,7 +7,7 @@
 
 import UIKit
 import Stevia
-import UIImageColors
+import SDWebImage
 
 final class DetailViewController: UIViewController {
     
@@ -64,12 +64,8 @@ final class DetailViewController: UIViewController {
         
         textDescription.numberOfLines = 0
         textDescription.text = constructDescription()
-        
-        imageView.image?.getColors({ [weak self] color in
-            guard let self else { return }
-            self.goToCoinGecko.backgroundColor = color?.primary
-        })
-        
+
+        goToCoinGecko.backgroundColor = .systemBlue
         goToCoinGecko.setTitleColor(.white, for: .normal)
         goToCoinGecko.setTitle("See on Coin Gecko", for: .normal)
         goToCoinGecko.layer.cornerRadius = 10
