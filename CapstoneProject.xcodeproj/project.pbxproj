@@ -41,6 +41,7 @@
 		F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */; };
 		F4E2F68F2959D5450009DAC0 /* FavoriteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */; };
 		F4E2F6912959DA4F0009DAC0 /* DetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */; };
+		F4E2F6932959DB410009DAC0 /* ProfileRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F6922959DB410009DAC0 /* ProfileRepo.swift */; };
 		F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */; };
 		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
 		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
@@ -92,6 +93,7 @@
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
 		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
+		F4E2F6922959DB410009DAC0 /* ProfileRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepo.swift; sourceTree = "<group>"; };
 		F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
 		F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -299,9 +301,10 @@
 		F4FB55AE2948A7E700790DC7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */,
 				F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */,
 				F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */,
-				F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */,
+				F4E2F6922959DB410009DAC0 /* ProfileRepo.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */,
 				F4042FC9292E7D0B0031ABFD /* UITableView+Ext.swift in Sources */,
 				F4C2D1C2293F94500058361D /* CapstoneSnackbar.swift in Sources */,
+				F4E2F6932959DB410009DAC0 /* ProfileRepo.swift in Sources */,
 				F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */,
 				F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */,
 				F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */,

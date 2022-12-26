@@ -10,28 +10,29 @@ import Combine
 
 class ProfileViewModel: ProfileViewModelProtocol {
     var profileData: ProfileEntity = ProfileEntity()
+    var repo: ProfileUseCase
+    
+    init(repo: ProfileUseCase) {
+        self.repo = repo
+    }
     
     func getProfile() -> AnyPublisher<ProfileEntity, Never> {
         return Future<ProfileEntity, Never> { [weak self] completion in
             guard let self else { return }
-            let profile: ProfileEntity = ProfileEntity(name: "Benaya Oktavianus",
-                                                       age: 24,
-                                                       occupation: "iOS Developer",
-                                                       workAt: "Indodax",
-                                                       photo: UIImage(named: "profile-pic-dicoding")!)
-            self.profileData = profile
-            completion(.success(self.profileData))
+            self.repo.getProfile { [weak self] data in
+                guard let self else { return }
+                self.profileData = data
+                completion(.success(data))
+            }
         }.eraseToAnyPublisher()
     }
 
     func generateProfileDesc() -> AnyPublisher<String, Never> {
         return Future<String, Never> { [weak self] completion in
             guard let self else { return }
-            let initial: String = "Hi, my name is \(self.profileData.name). "
-            let age: String = "I am \(self.profileData.age) years old. "
-            let job: String = "Currently, I work as \(self.profileData.occupation) at \(self.profileData.workAt)."
-            let description: String = initial + age + job
-            completion(.success(description))
+            self.repo.generateProfileDesc { data in
+                completion(.success(data))
+            }
         }.eraseToAnyPublisher()
     }
 }

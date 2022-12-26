@@ -25,7 +25,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func injection() {
-        viewModel = ProfileViewModel()
+        viewModel = ProfileViewModel(repo: ProfileRepo())
     }
     
     private func setupCombine() {
