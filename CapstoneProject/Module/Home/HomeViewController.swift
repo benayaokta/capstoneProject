@@ -12,7 +12,7 @@ import NVActivityIndicatorView
 import SnackBar
 import SDWebImage
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     
     private let tableView: UITableView = UITableView(frame: .zero, style: .plain)
     private var cancellables: Set<AnyCancellable> = []
@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     }
     
     private func injection() {
-        viewModel = HomeViewModel()
+        viewModel = HomeViewModel(repo: HomeRepo(service: NetworkService(), storage: DatabaseManager.shared))
     }
     
     private func setupHierarchy() {

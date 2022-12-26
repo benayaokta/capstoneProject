@@ -17,3 +17,12 @@ protocol HomeViewModelProtocol {
     func getAllPairs() -> AnyPublisher<[AllPairEntity], Error>
     func addToFavorite(pair: AllPairEntity)
 }
+
+
+protocol HomeUseCase {
+    func getAllPairs(completion: @escaping ([AllPairEntity]) -> Void, errorHandler: @escaping (Error) -> Void)
+    func saveToFavorite(pair: AllPairEntity, completion: (Bool, String) -> Void)
+    
+    var service: NetworkProtocol { get set }
+    var storage: DatabaseManager { get set }
+}

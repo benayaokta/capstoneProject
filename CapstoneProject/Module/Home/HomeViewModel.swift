@@ -12,42 +12,38 @@ import Alamofire
 final class HomeViewModel: HomeViewModelProtocol {
    
     var data: [AllPairEntity] = []
+    var repo: HomeUseCase
     
     var isLoading: PassthroughSubject<Bool, Never> = PassthroughSubject<Bool, Never>()
     var errorSnackbar: PassthroughSubject<String, Never> = PassthroughSubject<String, Never>()
     var normalSnackbar: PassthroughSubject<String, Never> = PassthroughSubject<String, Never>()
     
+    init(repo: HomeUseCase) {
+        self.repo = repo
+    }
+    
     func getAllPairs() -> AnyPublisher<[AllPairEntity], Error> {
         self.isLoading.send(true)
         return Future<[AllPairEntity], Error> { completion in
-            NetworkService().request(config: APIConfiguration.getAllPairs, object: [AllPairs].self) { [weak self] responseData, afError in
-                guard let self else { return }
-                if let afError {
-                    completion(.failure(afError))
-                } else {
-                    let entity = AllPairEntity.mapResponseModelToEntity(array: responseData!)
-                    completion(.success(entity))
-                    self.data = entity
-                }
+            self.repo.getAllPairs { [weak self] data in
+                self?.isLoading.send(false)
+                completion(.success(data))
+                self?.data = data
+            } errorHandler: { error in
                 self.isLoading.send(false)
+                completion(.failure(error))
             }
         }.eraseToAnyPublisher()
     }
     
     func addToFavorite(pair: AllPairEntity) {
-        if var array = DatabaseManager.shared.getData(type: [AllPairEntity].self, forKey: "favorite") {
-            if !array.contains(where: {$0.coinID == pair.coinID}) {
-                array.append(pair)
-                DatabaseManager.shared.setData(value: array, key: "favorite")
-                normalSnackbar.send("Success add to favorite")
+        repo.saveToFavorite(pair: pair) { [weak self] success, message in
+            guard let self else { return }
+            if success {
+                self.normalSnackbar.send(message)
             } else {
-                errorSnackbar.send("Item already on favorite")
+                self.errorSnackbar.send(message)
             }
-        } else {
-            var newArray: [AllPairEntity] = [AllPairEntity]()
-            newArray.append(pair)
-            DatabaseManager.shared.setData(value: newArray, key: "favorite")
-            normalSnackbar.send("Success add to favorite")
         }
     }
 }

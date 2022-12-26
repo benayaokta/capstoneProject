@@ -38,6 +38,7 @@
 		F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6812955A7870009DAC0 /* NVActivityIndicatorView */; };
 		F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6872955A8370009DAC0 /* SnackBar */; };
 		F4E2F68B2955A8DD0009DAC0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F68A2955A8DD0009DAC0 /* Alamofire */; };
+		F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */; };
 		F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */; };
 		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
 		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
@@ -86,6 +87,7 @@
 		F4C2D1C8293F971F0058361D /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
 		F4C2D1D9294212180058361D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
 		F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				F4042FCC292E83840031ABFD /* HomeProtocols.swift */,
 				F4042FA6292E60E60031ABFD /* HomeViewController.swift */,
 				F4042FCA292E836C0031ABFD /* HomeViewModel.swift */,
+				F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */,
 				F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */,
 				F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */,
+				F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */,
 				F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */,
 				F4FB55B62948ABD200790DC7 /* ProfileEntity.swift in Sources */,
 				F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */,
