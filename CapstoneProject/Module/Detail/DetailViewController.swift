@@ -36,7 +36,7 @@ final class DetailViewController: UIViewController {
     }
     
     private func injection() {
-        viewModel = DetailViewModel()
+        viewModel = DetailViewModel(repo: DetailRepo())
     }
     
     private func setupHierarchy() {

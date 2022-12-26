@@ -8,16 +8,14 @@
 import UIKit
 
 final class DetailViewModel: DetailViewModelProtocol {
+    var repo: DetailUseCase
     
-    init() {
-        
+    init(repo: DetailUseCase) {
+        self.repo = repo
     }
 
     func goToCoinGecko(id: String) {
-        guard let url = URL(string: "https://www.coingecko.com/en/coins/\(id)") else { return }
-        if UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url)
-        }
+        repo.goToCoinGecko(id: id)
     }
 
 }

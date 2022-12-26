@@ -13,25 +13,26 @@ final class FavoriteViewModel: FavoriteViewModelProtocol {
     
     var favoriteArrayPublisher: Published<[AllPairEntity]>.Publisher { $favoriteList }
     
-    init() {
-        
+    var repo: FavoriteUseCase
+    
+    init(repo: FavoriteUseCase) {
+        self.repo = repo
     }
     
     func populateFavorite() {
-        if let value = DatabaseManager.shared.getData(type: [AllPairEntity].self, forKey: "favorite") {
-            self.favoriteList = value
+        repo.populateFavorite { [weak self] data in
+            self?.favoriteList = data
         }
     }
 
     func removeFromFavorite(pair: AllPairEntity) {
         if let index = favoriteList.firstIndex(where: {$0.coinID == pair.coinID}) {
             favoriteList.remove(at: index)
-            DatabaseManager.shared.setData(value: favoriteList, key: "favorite")
+            repo.removeFromFavorite(pair: pair)
         }
     }
 
     func goToDetail(pair: AllPairEntity, from: UIViewController) {
-        let detail: DetailViewController = DetailViewController(data: pair)
-        from.navigationController?.pushViewController(detail, animated: true)
+        repo.goToDetail(pair: pair, from: from)
     }
 }

@@ -28,7 +28,7 @@ final class FavoriteViewController: UIViewController {
     }
     
     private func injection() {
-        viewModel = FavoriteViewModel()
+        viewModel = FavoriteViewModel(repo: FavoriteRepo(database: DatabaseManager.shared))
     }
     
     private func setupHierarchy() {

@@ -39,6 +39,8 @@
 		F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6872955A8370009DAC0 /* SnackBar */; };
 		F4E2F68B2955A8DD0009DAC0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F68A2955A8DD0009DAC0 /* Alamofire */; };
 		F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */; };
+		F4E2F68F2959D5450009DAC0 /* FavoriteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */; };
+		F4E2F6912959DA4F0009DAC0 /* DetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */; };
 		F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */; };
 		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
 		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
@@ -88,6 +90,8 @@
 		F4C2D1D9294212180058361D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
+		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
+		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
 		F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
 		F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -263,10 +267,11 @@
 		F4C2D1B9293F77B10058361D /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */,
 				F4C2D1D9294212180058361D /* FavoriteProtocols.swift */,
 				F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */,
 				F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */,
-				F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */,
+				F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				F4C2D1C8293F971F0058361D /* DetailProtocol.swift */,
 				F4C2D1C4293F96E10058361D /* DetailViewController.swift */,
 				F4C2D1C6293F97190058361D /* DetailViewModel.swift */,
+				F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -497,7 +503,9 @@
 				F4042FD2292E87E00031ABFD /* NetworkProtocol.swift in Sources */,
 				F4042FCD292E83840031ABFD /* HomeProtocols.swift in Sources */,
 				F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */,
+				F4E2F6912959DA4F0009DAC0 /* DetailRepo.swift in Sources */,
 				F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */,
+				F4E2F68F2959D5450009DAC0 /* FavoriteRepo.swift in Sources */,
 				F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */,
 				F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */,
 				F4042FD8292E8F290031ABFD /* AllPairsModel.swift in Sources */,
