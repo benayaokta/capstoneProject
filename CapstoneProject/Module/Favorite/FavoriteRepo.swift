@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 final class FavoriteRepo: FavoriteUseCase {
     var database: DatabaseManager
@@ -22,6 +23,16 @@ final class FavoriteRepo: FavoriteUseCase {
         }
     }
     
+    func populateFavorite() -> AnyPublisher<[AllPairEntity], Never> {
+        return Future<[AllPairEntity], Never> { [weak self] completion in
+            guard let self else { return }
+            if let value = self.database.getData(type: [AllPairEntity].self, forKey: "favorite") {
+                self.favoriteData = value
+                completion(.success(value))
+            }
+        }.eraseToAnyPublisher()
+    }
+    
     func removeFromFavorite(pair: AllPairEntity) {
         if let index = favoriteData.firstIndex(where: {$0.coinID == pair.coinID}) {
             favoriteData.remove(at: index)
@@ -29,7 +40,7 @@ final class FavoriteRepo: FavoriteUseCase {
         }
     }
     
-    func goToDetail(pair: AllPairEntity, from: UIViewController) {
+    func goToDetail(pair: AllPairUIModel, from: UIViewController) {
         let detail: DetailViewController = DetailViewController(data: pair)
         from.navigationController?.pushViewController(detail, animated: true)
     }

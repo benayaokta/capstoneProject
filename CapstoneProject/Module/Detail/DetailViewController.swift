@@ -8,6 +8,7 @@
 import UIKit
 import Stevia
 import SDWebImage
+import Combine
 
 final class DetailViewController: UIViewController {
     
@@ -16,10 +17,11 @@ final class DetailViewController: UIViewController {
     private let coinUnit: UILabel = UILabel()
     private let textDescription: UILabel = UILabel()
     private let goToCoinGecko: UIButton = UIButton()
+    var cancellables: Set<AnyCancellable> = []
     
-    let data: AllPairEntity
+    let data: AllPairUIModel
     
-    init(data: AllPairEntity) {
+    init(data: AllPairUIModel) {
         self.data = data
         super.init(nibName: nil, bundle: nil)
     }
@@ -33,6 +35,7 @@ final class DetailViewController: UIViewController {
         injection()
         setupHierarchy()
         setupComponent()
+        setupCombine()
     }
     
     private func injection() {
@@ -63,8 +66,7 @@ final class DetailViewController: UIViewController {
         coinUnit.text = self.data.tradeCurrencyUnit
         
         textDescription.numberOfLines = 0
-        textDescription.text = constructDescription()
-
+        
         goToCoinGecko.backgroundColor = .systemBlue
         goToCoinGecko.setTitleColor(.white, for: .normal)
         goToCoinGecko.setTitle("See on Coin Gecko", for: .normal)
@@ -78,27 +80,15 @@ final class DetailViewController: UIViewController {
         }
     }
     
-    @objc private func redirectToCoinGecko() {
-        viewModel?.goToCoinGecko(id: self.data.coinGeckoID)
+    private func setupCombine() {
+        viewModel?.constructDescription(pair: data).sink(receiveValue: { [weak self] desc in
+            guard let self else { return }
+            self.textDescription.text = desc
+        }).store(in: &cancellables)
     }
     
-    private func constructDescription() -> String {
-        var paragraph: String = String()
-        
-        let baseCurrency: String = "This coin base currency is \(data.baseCurrency.uppercased()). "
-        let tickerID: String = "This coin Ticker ID is \(data.tickerID). "
-        
-        let hasMemo: String = data.hasMemo ? "has memo." : "does not have a memo."
-        let memoParagraph: String = "This coin \(hasMemo) "
-        
-        let digitPriceRound: String = "This coin have \(data.priceRound) digit(s) price round."
-        
-        paragraph.append(baseCurrency)
-        paragraph.append(tickerID)
-        paragraph.append(memoParagraph)
-        paragraph.append(digitPriceRound)
-        
-        return paragraph
+    @objc private func redirectToCoinGecko() {
+        viewModel?.goToCoinGecko(id: self.data.coinGeckoID)
     }
     
 }

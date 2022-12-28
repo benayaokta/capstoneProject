@@ -9,21 +9,24 @@ import UIKit.UIViewController
 import Combine
 
 protocol FavoriteViewModelProtocol {
-    var favoriteList: [AllPairEntity] { get set }
+    var favoriteList: [AllPairUIModel] { get set }
     var repo: FavoriteUseCase { get set }
-    var favoriteArrayPublisher: Published<[AllPairEntity]>.Publisher { get }
     
-    func removeFromFavorite(pair: AllPairEntity)
-    func goToDetail(pair: AllPairEntity, from: UIViewController)
+    var favoriteArrayPublisher: Published<[AllPairUIModel]>.Publisher { get }
+    var cancellables: Set<AnyCancellable> { get set }
+    
+    func removeFromFavorite(pair: AllPairUIModel)
+    func goToDetail(pair: AllPairUIModel, from: UIViewController)
     func populateFavorite()
 }
 
 protocol FavoriteUseCase {
     var database: DatabaseManager { get set }
     var favoriteData: [AllPairEntity] { get set }
-    func populateFavorite(completion: @escaping ([AllPairEntity]) -> Void)
+    
     func removeFromFavorite(pair: AllPairEntity)
-    func goToDetail(pair: AllPairEntity, from: UIViewController)
+    func populateFavorite() -> AnyPublisher<[AllPairEntity], Never>
+    func goToDetail(pair: AllPairUIModel, from: UIViewController)
 }
 
 enum FavoriteError: Error {

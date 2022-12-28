@@ -11,39 +11,56 @@ import Alamofire
 
 final class HomeViewModel: HomeViewModelProtocol {
    
-    var data: [AllPairEntity] = []
+    var data: [AllPairUIModel] = []
     var repo: HomeUseCase
     
     var isLoading: PassthroughSubject<Bool, Never> = PassthroughSubject<Bool, Never>()
     var errorSnackbar: PassthroughSubject<String, Never> = PassthroughSubject<String, Never>()
     var normalSnackbar: PassthroughSubject<String, Never> = PassthroughSubject<String, Never>()
     
+    var cancellables: Set<AnyCancellable> = []
+    
     init(repo: HomeUseCase) {
         self.repo = repo
     }
-    
-    func getAllPairs() -> AnyPublisher<[AllPairEntity], Error> {
+
+    func getAllPairs() -> AnyPublisher<[AllPairUIModel], Error> {
         self.isLoading.send(true)
-        return Future<[AllPairEntity], Error> { completion in
-            self.repo.getAllPairs { [weak self] data in
-                self?.isLoading.send(false)
-                completion(.success(data))
-                self?.data = data
-            } errorHandler: { error in
+        return Future<[AllPairUIModel], Error> { [weak self] completion in
+            guard let self else { return }
+            self.repo.getAllPairs().sink { getAllPair in
+                switch getAllPair {
+                case .failure(let error):
+                    self.isLoading.send(false)
+                    completion(.failure(error))
+                default:
+                    break
+                }
+            } receiveValue: { response in
                 self.isLoading.send(false)
-                completion(.failure(error))
-            }
+                dump(response)
+                let entity = AllPairUIModel.mapModelToUIModel(array: response)
+                completion(.success(entity))
+            }.store(in: &self.cancellables)
         }.eraseToAnyPublisher()
     }
     
-    func addToFavorite(pair: AllPairEntity) {
-        repo.saveToFavorite(pair: pair) { [weak self] success, message in
+    func addToFavorite(pair: AllPairUIModel) {
+        let pair: AllPairEntity = AllPairEntity.mapUIModelToEntity(pair: pair)
+        repo.saveToFavorite(pair: pair).sink { [weak self] errorHandler in
             guard let self else { return }
-            if success {
-                self.normalSnackbar.send(message)
-            } else {
-                self.errorSnackbar.send(message)
+            switch errorHandler {
+            case .failure(let error):
+                switch error {
+                case .duplicateItem(let text):
+                    self.errorSnackbar.send(text)
+                }
+            default:
+                break
             }
-        }
+        } receiveValue: { [weak self] message in
+            guard let self else { return }
+            self.normalSnackbar.send(message)
+        }.store(in: &cancellables)
     }
 }

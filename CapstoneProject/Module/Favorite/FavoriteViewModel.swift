@@ -9,10 +9,10 @@ import UIKit
 import Combine
 
 final class FavoriteViewModel: FavoriteViewModelProtocol {
-    @Published var favoriteList: [AllPairEntity] = []
+    @Published var favoriteList: [AllPairUIModel] = []
     
-    var favoriteArrayPublisher: Published<[AllPairEntity]>.Publisher { $favoriteList }
-    
+    var favoriteArrayPublisher: Published<[AllPairUIModel]>.Publisher { $favoriteList }
+    var cancellables: Set<AnyCancellable> = []
     var repo: FavoriteUseCase
     
     init(repo: FavoriteUseCase) {
@@ -20,19 +20,21 @@ final class FavoriteViewModel: FavoriteViewModelProtocol {
     }
     
     func populateFavorite() {
-        repo.populateFavorite { [weak self] data in
-            self?.favoriteList = data
-        }
+        repo.populateFavorite().sink { [weak self] data in
+            guard let self else { return }
+            self.favoriteList = AllPairUIModel.mapEntityToUIModel(array: data)
+        }.store(in: &cancellables)
     }
 
-    func removeFromFavorite(pair: AllPairEntity) {
-        if let index = favoriteList.firstIndex(where: {$0.coinID == pair.coinID}) {
+    func removeFromFavorite(pair: AllPairUIModel) {
+        let entityPair = AllPairEntity.mapUIModelToEntity(pair: pair)
+        if let index = favoriteList.firstIndex(where: {$0.coinID == entityPair.coinID}) {
             favoriteList.remove(at: index)
-            repo.removeFromFavorite(pair: pair)
+            repo.removeFromFavorite(pair: entityPair)
         }
     }
 
-    func goToDetail(pair: AllPairEntity, from: UIViewController) {
+    func goToDetail(pair: AllPairUIModel, from: UIViewController) {
         repo.goToDetail(pair: pair, from: from)
     }
 }

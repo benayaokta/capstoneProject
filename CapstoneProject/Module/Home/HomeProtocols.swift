@@ -12,17 +12,22 @@ protocol HomeViewModelProtocol {
     var errorSnackbar: PassthroughSubject<String, Never> { get set }
     var normalSnackbar: PassthroughSubject<String, Never> { get set }
     
-    var data: [AllPairEntity] { get set }
+    var data: [AllPairUIModel] { get set }
+    var cancellables: Set<AnyCancellable> { get set }
     
-    func getAllPairs() -> AnyPublisher<[AllPairEntity], Error>
-    func addToFavorite(pair: AllPairEntity)
+    func getAllPairs() -> AnyPublisher<[AllPairUIModel], Error>
+    func addToFavorite(pair: AllPairUIModel)
 }
 
 
-protocol HomeUseCase {
-    func getAllPairs(completion: @escaping ([AllPairEntity]) -> Void, errorHandler: @escaping (Error) -> Void)
-    func saveToFavorite(pair: AllPairEntity, completion: (Bool, String) -> Void)
+protocol HomeUseCase {    
+    func getAllPairs() -> AnyPublisher<[AllPairModel], Error>
+    func saveToFavorite(pair: AllPairEntity) -> AnyPublisher<String, FavoriteErrorEnum>
     
     var service: NetworkProtocol { get set }
     var storage: DatabaseManager { get set }
+}
+
+enum FavoriteErrorEnum: Error {
+    case duplicateItem(String)
 }

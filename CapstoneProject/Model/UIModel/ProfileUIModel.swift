@@ -1,13 +1,13 @@
 //
-//  ProfileEntity.swift
+//  ProfileUIModel.swift
 //  CapstoneProject
 //
-//  Created by Benaya Oktavianus on 13/12/22.
+//  Created by Benaya Oktavianus on 28/12/22.
 //
 
 import UIKit.UIImage
 
-struct ProfileEntity {
+struct ProfileUIModel {
     let name: String
     let age: Int
     let occupation: String
@@ -31,12 +31,12 @@ struct ProfileEntity {
         self.photo = UIImage()
     }
     
-    static func mapUIModelToEntity(model: ProfileUIModel) -> ProfileEntity {
-        return ProfileEntity(name: model.name,
-                             age: model.age,
-                             occupation: model.occupation,
-                             workAt: model.workAt,
-                             photo: model.photo)
+    static func mapEntityToUIModel(model: ProfileEntity) -> ProfileUIModel {
+        return ProfileUIModel(name: model.name,
+                              age: model.age,
+                              occupation: model.occupation,
+                              workAt: model.workAt,
+                              photo: model.photo)
     }
     
 }

@@ -1,11 +1,13 @@
 //
-//  AllPairsModel.swift
+//  AllPairModel.swift
 //  CapstoneProject
 //
-//  Created by Benaya Oktavianus on 24/11/22.
+//  Created by Benaya Oktavianus on 28/12/22.
 //
 
-struct AllPairs: Codable {
+import Foundation
+
+struct AllPairModel: Codable {
     let coinID, coinSymbol, baseCurrency, tradedCurrency: String
     let tradedCurrencyUnit, coinDescription, tickerID: String
     let volumePrecision, pricePrecision, priceRound, pricescale: Int
@@ -74,6 +76,30 @@ struct AllPairs: Codable {
         self.urlLogoPNG = urlLogoPNG
         self.isMaintenance = isMaintenance
         self.coinGeckoID = coinGeckoID
+    }
+    
+    static func mapResponseToModel(array: [AllPairsResponse]) -> [AllPairModel] {
+        var model: [AllPairModel] = []
+        model = array.compactMap({ list in
+            return AllPairModel(coinID: list.coinID,
+                                coinSymbol: list.coinSymbol,
+                                baseCurrency: list.baseCurrency,
+                                tradedCurrency: list.tradedCurrency,
+                                tradedCurrencyUnit: list.tradedCurrencyUnit,
+                                coinDescription: list.coinDescription,
+                                tickerID: list.tickerID,
+                                volumePrecision: list.volumePrecision,
+                                pricePrecision: list.pricePrecision,
+                                priceRound: list.priceRound,
+                                pricescale: list.pricescale,
+                                tradeMinBaseCurrency: list.tradeMinBaseCurrency,
+                                tradeMinTradedCurrency: list.tradeMinTradedCurrency,
+                                hasMemo: list.hasMemo,
+                                tradeFeePercent: list.tradeFeePercent,
+                                urlLogoPNG: list.urlLogoPNG,
+                                isMaintenance: list.isMaintenance)
+        })
+        return model
     }
     
 }

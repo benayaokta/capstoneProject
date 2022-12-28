@@ -17,7 +17,7 @@ final class HomeViewController: UIViewController {
     private let tableView: UITableView = UITableView(frame: .zero, style: .plain)
     private var cancellables: Set<AnyCancellable> = []
     private var viewModel: HomeViewModelProtocol!
-    private var filteredData: [AllPairEntity] = [AllPairEntity]()
+    private var filteredData: [AllPairUIModel] = [AllPairUIModel]()
     private var refreshControl: UIRefreshControl = UIRefreshControl()
     private let indicator: NVActivityIndicatorView = NVActivityIndicatorView(frame: .zero, type: .circleStrokeSpin, color: .black, padding: .zero)
     private let searchController = UISearchController(searchResultsController: nil)
@@ -179,7 +179,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueCell(withType: CapstoneTableViewCell.self, for: indexPath) as? CapstoneTableViewCell else { return UITableViewCell() }
-        let cryptoData: AllPairEntity = filteredData[indexPath.row]
+        let cryptoData: AllPairUIModel = filteredData[indexPath.row]
         
         cell.coinDesc.text = cryptoData.description
         cell.coinImage.sd_imageIndicator = SDWebImageActivityIndicator.gray

@@ -14,7 +14,6 @@ final class FavoriteViewController: UIViewController {
     
     private let favoriteTableView: UITableView = UITableView()
     private let emptyView: UIView = FavoriteEmptyView()
-    private var favoriteData: [AllPairEntity] = [AllPairEntity]()
     private var viewModel: FavoriteViewModelProtocol!
     private var cancellables: Set<AnyCancellable> = []
     
@@ -95,7 +94,7 @@ extension FavoriteViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueCell(withType: CapstoneTableViewCell.self, for: indexPath) as? CapstoneTableViewCell else { return UITableViewCell() }
-        let cryptoData: AllPairEntity = viewModel.favoriteList[indexPath.row]
+        let cryptoData: AllPairUIModel = viewModel.favoriteList[indexPath.row]
         
         cell.coinDesc.text = cryptoData.description
         cell.coinImage.sd_imageIndicator = SDWebImageActivityIndicator.gray
