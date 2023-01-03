@@ -26,4 +26,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - benaya.oktavianuns@gmail.com # Isikan email untuk notifikasi status building.
+          - benaya.oktavianus@gmail.com # Isikan email untuk notifikasi status building.
