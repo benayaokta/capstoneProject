@@ -38,8 +38,8 @@ final class HomeViewModel: HomeViewModelProtocol {
                 }
             } receiveValue: { response in
                 self.isLoading.send(false)
-                dump(response)
                 let entity = AllPairUIModel.mapModelToUIModel(array: response)
+                self.data = entity
                 completion(.success(entity))
             }.store(in: &self.cancellables)
         }.eraseToAnyPublisher()
