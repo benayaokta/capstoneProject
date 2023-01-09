@@ -54,7 +54,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupStyle() {
-        self.title = "Profile"
+        self.title = "profile.title".localized(id: AppDelegate.mainBundle)
         self.view.backgroundColor = .white
         
         nameLabel.font = UIFont.systemFont(ofSize: 16, weight: .semibold)

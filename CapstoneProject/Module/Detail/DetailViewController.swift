@@ -70,7 +70,7 @@ final class DetailViewController: UIViewController {
         
         goToCoinGecko.backgroundColor = .systemBlue
         goToCoinGecko.setTitleColor(.white, for: .normal)
-        goToCoinGecko.setTitle("See on Coin Gecko", for: .normal)
+        goToCoinGecko.setTitle("general.see.on.coin.gecko".localized(id: AppDelegate.mainBundle), for: .normal)
         goToCoinGecko.layer.cornerRadius = 10
         
         if data.coinGeckoID != "" {

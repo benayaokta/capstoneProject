@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  CapstoneProject
+
+  Created by Benaya Oktavianus on 10/01/23.
+  
+*/
+
+"home.title" = "List Kripto";
+"profile.title" = "Profil";
+
+"favorite.title" = "Favorit";
+"favorite.action.add" = "Tambahkan ke favorit";
+"favorite.action.remove" = "Hapus dari favorit";
+
+"general.pull.refresh" = "Tarik untuk pembaharuan";
+"general.see.on.coin.gecko" = "Lihat di CoinGecko";

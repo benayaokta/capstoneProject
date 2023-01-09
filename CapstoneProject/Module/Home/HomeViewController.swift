@@ -50,7 +50,7 @@ final class HomeViewController: UIViewController {
     }
 
     private func setupStyle() {
-        self.title = "Crypto List"
+        self.title = "home.title".localized(id: AppDelegate.mainBundle)
     }
     
     private func setupComponent() {
@@ -61,15 +61,15 @@ final class HomeViewController: UIViewController {
         searchController.searchResultsUpdater = self
         tableView.tableHeaderView = searchController.searchBar
         
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.attributedTitle = NSAttributedString(string: "general.pull.refresh".localized(id: AppDelegate.mainBundle))
         refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
         tableView.refreshControl = refreshControl
     }
     
     private func setupFavoriteButtonn() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(goToProfile))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "profile.title".localized(id: AppDelegate.mainBundle), style: .plain, target: self, action: #selector(goToProfile))
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(goToFavorite))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "favorite.title".localized(id: AppDelegate.mainBundle), style: .plain, target: self, action: #selector(goToFavorite))
     }
     
     @objc private func goToFavorite() {
@@ -148,7 +148,7 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .normal, title: "Add to favorite") { _, _, completionHandler in
+        let action = UIContextualAction(style: .normal, title: "favorite.action.add".localized(id: AppDelegate.mainBundle)) { _, _, completionHandler in
             self.viewModel.addToFavorite(pair: self.filteredData[indexPath.row])
             
             completionHandler(true)
