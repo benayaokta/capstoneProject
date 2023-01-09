@@ -585,6 +585,7 @@
 /* Begin XCBuildConfiguration section */
 		F4042FB1292E60E80031ABFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBECF12E859A24619C53CF2 /* Pods-CapstoneProject.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
