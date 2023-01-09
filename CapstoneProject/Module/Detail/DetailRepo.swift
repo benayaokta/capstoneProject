@@ -7,6 +7,7 @@
 
 import UIKit.UIApplication
 import Combine
+import CoreModel
 
 final class DetailRepo: DetailUseCase {
     func goToCoinGecko(id: String) {

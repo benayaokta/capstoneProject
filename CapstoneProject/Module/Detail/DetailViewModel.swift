@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import CoreModel
 
 final class DetailViewModel: DetailViewModelProtocol {
     var cancellables: Set<AnyCancellable> = []

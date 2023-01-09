@@ -6,6 +6,7 @@
 //
 
 import Combine
+import CoreModel
 
 protocol HomeViewModelProtocol {
     var isLoading: PassthroughSubject<Bool, Never> { get set }

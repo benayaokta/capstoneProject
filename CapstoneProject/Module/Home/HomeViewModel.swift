@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import Alamofire
+import CoreModel
 
 final class HomeViewModel: HomeViewModelProtocol {
    

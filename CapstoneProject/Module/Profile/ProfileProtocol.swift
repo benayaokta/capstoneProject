@@ -6,6 +6,7 @@
 //
 
 import Combine
+import CoreModel
 
 protocol ProfileViewModelProtocol {
     var profileData: ProfileUIModel { get set }

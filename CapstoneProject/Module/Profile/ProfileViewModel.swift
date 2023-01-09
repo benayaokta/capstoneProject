@@ -7,6 +7,7 @@
 
 import UIKit.UIImage
 import Combine
+import CoreModel
 
 class ProfileViewModel: ProfileViewModelProtocol {
     var profileData: ProfileUIModel = ProfileUIModel()

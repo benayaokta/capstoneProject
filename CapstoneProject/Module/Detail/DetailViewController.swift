@@ -9,6 +9,7 @@ import UIKit
 import Stevia
 import SDWebImage
 import Combine
+import CoreModel
 
 final class DetailViewController: UIViewController {
     

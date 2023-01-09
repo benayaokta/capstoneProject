@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CoreModel
 
 protocol DetailViewModelProtocol {
     var repo: DetailUseCase { get set }

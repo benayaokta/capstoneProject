@@ -11,6 +11,7 @@ import Stevia
 import NVActivityIndicatorView
 import SnackBar
 import SDWebImage
+import CoreModel
 
 final class HomeViewController: UIViewController {
     

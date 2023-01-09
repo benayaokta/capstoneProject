@@ -8,6 +8,7 @@
 import Foundation
 import UIKit.UIImage
 import Combine
+import CoreModel
 
 final class ProfileRepo: ProfileUseCase {
     

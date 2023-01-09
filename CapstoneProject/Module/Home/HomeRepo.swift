@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import Combine
+import CoreModel
 
 final class HomeRepo: HomeUseCase {
     

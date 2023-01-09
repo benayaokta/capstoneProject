@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import CoreModel
 
 final class FavoriteViewModel: FavoriteViewModelProtocol {
     @Published var favoriteList: [AllPairUIModel] = []
