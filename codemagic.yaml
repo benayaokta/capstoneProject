@@ -27,3 +27,6 @@ workflows:
       email:
         recipients:
           - benaya.oktavianus@gmail.com # Isikan email untuk notifikasi status building.
+        notify:
+            success: true
+            failure: false
