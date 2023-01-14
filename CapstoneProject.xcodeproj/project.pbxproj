@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EEA88A53F9BF5EE78F86B830 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1DFF4739E99D1FC43E147B /* Pods_CapstoneProject.framework */; };
 		F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA2292E60E60031ABFD /* AppDelegate.swift */; };
 		F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA4292E60E60031ABFD /* SceneDelegate.swift */; };
 		F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA6292E60E60031ABFD /* HomeViewController.swift */; };
@@ -60,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C1DFF4739E99D1FC43E147B /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23406E17ED4F7A3708F2C1C0 /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBECF12E859A24619C53CF2 /* Pods-CapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9DC55C29EAC03BE0BD828B65 /* Pods-CapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
 		F4042F9F292E60E60031ABFD /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +111,6 @@
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
 				F4338ADD296C823800476422 /* CoreModel in Frameworks */,
-				EEA88A53F9BF5EE78F86B830 /* Pods_CapstoneProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +128,7 @@
 		08DD657E24F4BABFC39A8551 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C1DFF4739E99D1FC43E147B /* Pods_CapstoneProject.framework */,
+				23406E17ED4F7A3708F2C1C0 /* Pods_CapstoneProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
