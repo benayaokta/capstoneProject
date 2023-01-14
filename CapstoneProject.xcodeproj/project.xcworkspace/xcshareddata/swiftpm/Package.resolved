@@ -10,12 +10,21 @@
       }
     },
     {
-      "identity" : "alamofirenetworkactivitylogger",
+      "identity" : "becoreextension",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/konkab/AlamofireNetworkActivityLogger",
+      "location" : "https://github.com/benayaokta/BECoreExtension",
       "state" : {
-        "branch" : "master",
-        "revision" : "8db9d4e27176905298e7215e3d800e349cdfa30b"
+        "branch" : "main",
+        "revision" : "3e3559228a7981c9609ec2e6896e341a588f6c9d"
+      }
+    },
+    {
+      "identity" : "coremodelcapstone",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/benayaokta/CoreModelCapstone",
+      "state" : {
+        "branch" : "main",
+        "revision" : "09b2cbdd295b425c7e6c9fbdbd24d97ba825e2da"
       }
     },
     {
@@ -70,15 +79,6 @@
       "state" : {
         "branch" : "master",
         "revision" : "8e3220a4ca1aa1bc731d6bde5a39b40d89483b30"
-      }
-    },
-    {
-      "identity" : "uiimagecolors",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jathu/UIImageColors",
-      "state" : {
-        "revision" : "e49e6c32ea556e9fa0109dc79686bea4a10d41a2",
-        "version" : "2.2.0"
       }
     }
   ],
