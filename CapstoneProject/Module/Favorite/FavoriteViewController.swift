@@ -10,6 +10,7 @@ import Stevia
 import SDWebImage
 import Combine
 import CoreModel
+import CoreExtension
 
 final class FavoriteViewController: UIViewController {
     

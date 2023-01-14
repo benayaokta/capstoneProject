@@ -8,6 +8,7 @@
 import UIKit
 import Stevia
 import Combine
+import CoreExtension
 
 class ProfileViewController: UIViewController {
     private let profilePicture: UIImageView = UIImageView()

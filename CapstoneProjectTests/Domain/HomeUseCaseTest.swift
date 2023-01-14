@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import XCTest
+import CoreModel
 
 @testable import CapstoneProject
 
@@ -109,16 +110,16 @@ extension HomeUseCaseTest {
         
         var normalSnackbar: PassthroughSubject<String, Never> = PassthroughSubject<String, Never>()
         
-        var data: [CapstoneProject.AllPairUIModel] = []
+        var data: [AllPairUIModel] = []
         
-        func getAllPairs() -> AnyPublisher<[CapstoneProject.AllPairUIModel], Error> {
+        func getAllPairs() -> AnyPublisher<[AllPairUIModel], Error> {
             return Future<[AllPairUIModel], Error> { completion in
                 let uiModel = AllPairUIModel.mapModelToUIModel(array: self.entity)
                 completion(.success(uiModel))
             }.eraseToAnyPublisher()
         }
         
-        func addToFavorite(pair: CapstoneProject.AllPairUIModel) {
+        func addToFavorite(pair: AllPairUIModel) {
             
         }
         
