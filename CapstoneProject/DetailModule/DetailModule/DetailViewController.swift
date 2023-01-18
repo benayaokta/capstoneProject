@@ -11,7 +11,7 @@ import SDWebImage
 import Combine
 import CoreModel
 
-final class DetailViewController: UIViewController {
+public final class DetailViewController: UIViewController {
     
     private var viewModel: DetailViewModelProtocol?
     private let imageView: UIImageView = UIImageView()
@@ -20,9 +20,9 @@ final class DetailViewController: UIViewController {
     private let goToCoinGecko: UIButton = UIButton()
     var cancellables: Set<AnyCancellable> = []
     
-    let data: AllPairUIModel
+    public let data: AllPairUIModel
     
-    init(data: AllPairUIModel) {
+    public init(data: AllPairUIModel) {
         self.data = data
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,7 +31,7 @@ final class DetailViewController: UIViewController {
         fatalError("init coder must be initialize")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         injection()
         setupHierarchy()

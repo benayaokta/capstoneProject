@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8DA45EA134A3D1A9A08C3411 /* Pods_FavoriteModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0BCE205EB77639A8E9481D /* Pods_FavoriteModule.framework */; };
+		F4DC26D3297840770009A20D /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26CE297840770009A20D /* FavoriteProtocols.swift */; };
+		F4DC26D4297840770009A20D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26CF297840770009A20D /* FavoriteViewController.swift */; };
+		F4DC26D5297840770009A20D /* FavoriteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26D0297840770009A20D /* FavoriteRepo.swift */; };
+		F4DC26D6297840770009A20D /* FavoriteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26D1297840770009A20D /* FavoriteEmptyView.swift */; };
+		F4DC26D7297840770009A20D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26D2297840770009A20D /* FavoriteViewModel.swift */; };
+		F4DC26DA297840970009A20D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26D9297840970009A20D /* SDWebImage */; };
+		F4DC26DC297840A10009A20D /* CoreModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26DB297840A10009A20D /* CoreModel.framework */; };
+		F4DC26E0297840A90009A20D /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26DF297840A90009A20D /* Common.framework */; };
+		F4DC26E4297840AD0009A20D /* CoreManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26E3297840AD0009A20D /* CoreManager.framework */; };
+		F4DC26E8297840BB0009A20D /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26E7297840BB0009A20D /* Stevia */; };
+		F4DC26EB297840C60009A20D /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26EA297840C60009A20D /* CoreExtension */; };
+		F4DC26FF297841C30009A20D /* DetailModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26FE297841C30009A20D /* DetailModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +27,15 @@
 		7D0BCE205EB77639A8E9481D /* Pods_FavoriteModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavoriteModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6236B8E5CAE58B6AB084C32 /* Pods-FavoriteModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteModule.debug.xcconfig"; path = "Target Support Files/Pods-FavoriteModule/Pods-FavoriteModule.debug.xcconfig"; sourceTree = "<group>"; };
 		F4DC267429783E870009A20D /* FavoriteModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavoriteModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26CE297840770009A20D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
+		F4DC26CF297840770009A20D /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F4DC26D0297840770009A20D /* FavoriteRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
+		F4DC26D1297840770009A20D /* FavoriteEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteEmptyView.swift; sourceTree = "<group>"; };
+		F4DC26D2297840770009A20D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		F4DC26DB297840A10009A20D /* CoreModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26DF297840A90009A20D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26E3297840AD0009A20D /* CoreManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26FE297841C30009A20D /* DetailModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DetailModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,7 +43,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC26E8297840BB0009A20D /* Stevia in Frameworks */,
+				F4DC26E4297840AD0009A20D /* CoreManager.framework in Frameworks */,
+				F4DC26DA297840970009A20D /* SDWebImage in Frameworks */,
+				F4DC26FF297841C30009A20D /* DetailModule.framework in Frameworks */,
+				F4DC26E0297840A90009A20D /* Common.framework in Frameworks */,
+				F4DC26EB297840C60009A20D /* CoreExtension in Frameworks */,
 				8DA45EA134A3D1A9A08C3411 /* Pods_FavoriteModule.framework in Frameworks */,
+				F4DC26DC297840A10009A20D /* CoreModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +60,10 @@
 		38DBAB98D9FFDB383AA67E40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC26FE297841C30009A20D /* DetailModule.framework */,
+				F4DC26E3297840AD0009A20D /* CoreManager.framework */,
+				F4DC26DF297840A90009A20D /* Common.framework */,
+				F4DC26DB297840A10009A20D /* CoreModel.framework */,
 				7D0BCE205EB77639A8E9481D /* Pods_FavoriteModule.framework */,
 			);
 			name = Frameworks;
@@ -68,6 +100,11 @@
 		F4DC267629783E870009A20D /* FavoriteModule */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC26D1297840770009A20D /* FavoriteEmptyView.swift */,
+				F4DC26CE297840770009A20D /* FavoriteProtocols.swift */,
+				F4DC26D0297840770009A20D /* FavoriteRepo.swift */,
+				F4DC26CF297840770009A20D /* FavoriteViewController.swift */,
+				F4DC26D2297840770009A20D /* FavoriteViewModel.swift */,
 			);
 			path = FavoriteModule;
 			sourceTree = "<group>";
@@ -100,6 +137,11 @@
 			dependencies = (
 			);
 			name = FavoriteModule;
+			packageProductDependencies = (
+				F4DC26D9297840970009A20D /* SDWebImage */,
+				F4DC26E7297840BB0009A20D /* Stevia */,
+				F4DC26EA297840C60009A20D /* CoreExtension */,
+			);
 			productName = FavoriteModule;
 			productReference = F4DC267429783E870009A20D /* FavoriteModule.framework */;
 			productType = "com.apple.product-type.framework";
@@ -115,6 +157,7 @@
 				TargetAttributes = {
 					F4DC267329783E870009A20D = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -127,6 +170,11 @@
 				Base,
 			);
 			mainGroup = F4DC266A29783E870009A20D;
+			packageReferences = (
+				F4DC26D8297840970009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F4DC26E6297840BB0009A20D /* XCRemoteSwiftPackageReference "Stevia" */,
+				F4DC26E9297840C60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */,
+			);
 			productRefGroup = F4DC267529783E870009A20D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC26D6297840770009A20D /* FavoriteEmptyView.swift in Sources */,
+				F4DC26D5297840770009A20D /* FavoriteRepo.swift in Sources */,
+				F4DC26D4297840770009A20D /* FavoriteViewController.swift in Sources */,
+				F4DC26D7297840770009A20D /* FavoriteViewModel.swift in Sources */,
+				F4DC26D3297840770009A20D /* FavoriteProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -306,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6236B8E5CAE58B6AB084C32 /* Pods-FavoriteModule.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -325,9 +379,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.FavoriteModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24117CB77E3204C3D2F94906 /* Pods-FavoriteModule.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -354,9 +413,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.FavoriteModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -382,6 +444,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4DC26D8297840970009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26E6297840BB0009A20D /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26E9297840C60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benayaokta/BECoreExtension";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4DC26D9297840970009A20D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26D8297840970009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F4DC26E7297840BB0009A20D /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26E6297840BB0009A20D /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		F4DC26EA297840C60009A20D /* CoreExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26E9297840C60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */;
+			productName = CoreExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4DC266B29783E870009A20D /* Project object */;
 }

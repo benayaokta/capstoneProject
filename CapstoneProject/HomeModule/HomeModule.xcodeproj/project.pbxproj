@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A57EA659E753BE285238AD9E /* Pods_HomeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B991C28C8B8FD31663514E28 /* Pods_HomeModule.framework */; };
+		F4DC269A29783EFA0009A20D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC269629783EFA0009A20D /* HomeViewController.swift */; };
+		F4DC269B29783EFA0009A20D /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC269729783EFA0009A20D /* HomeRepo.swift */; };
+		F4DC269C29783EFA0009A20D /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC269829783EFA0009A20D /* HomeProtocols.swift */; };
+		F4DC269D29783EFA0009A20D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC269929783EFA0009A20D /* HomeViewModel.swift */; };
+		F4DC26A029783F130009A20D /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC269F29783F130009A20D /* Stevia */; };
+		F4DC26A329783F280009A20D /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26A229783F280009A20D /* NVActivityIndicatorView */; };
+		F4DC26A629783F330009A20D /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26A529783F330009A20D /* SnackBar */; };
+		F4DC26A929783F3F0009A20D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26A829783F3F0009A20D /* SDWebImage */; };
+		F4DC26BF297840000009A20D /* CoreModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26BE297840000009A20D /* CoreModel.framework */; };
+		F4DC26C3297840060009A20D /* DetailModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26C2297840060009A20D /* DetailModule.framework */; };
+		F4DC26C62978400E0009A20D /* ProfileModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26C52978400E0009A20D /* ProfileModule.framework */; };
+		F4DC26C9297840130009A20D /* FavoriteModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26C8297840130009A20D /* FavoriteModule.framework */; };
+		F4DC26ED297840D90009A20D /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26EC297840D90009A20D /* Common.framework */; };
+		F4DC26F1297840E20009A20D /* CoreManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26F0297840E20009A20D /* CoreManager.framework */; };
+		F4DC26F5297841090009A20D /* CoreNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26F4297841090009A20D /* CoreNetwork.framework */; };
+		F4DC26FA2978411C0009A20D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26F92978411C0009A20D /* Alamofire */; };
+		F4DC26FD297841A60009A20D /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26FC297841A60009A20D /* CoreExtension */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +32,17 @@
 		B991C28C8B8FD31663514E28 /* Pods_HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4D1DA22573617E043A0757 /* Pods-HomeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeModule.release.xcconfig"; path = "Target Support Files/Pods-HomeModule/Pods-HomeModule.release.xcconfig"; sourceTree = "<group>"; };
 		F4DC265829783E7B0009A20D /* HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC269629783EFA0009A20D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4DC269729783EFA0009A20D /* HomeRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
+		F4DC269829783EFA0009A20D /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		F4DC269929783EFA0009A20D /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F4DC26BE297840000009A20D /* CoreModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26C2297840060009A20D /* DetailModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DetailModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26C52978400E0009A20D /* ProfileModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26C8297840130009A20D /* FavoriteModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FavoriteModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26EC297840D90009A20D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26F0297840E20009A20D /* CoreManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26F4297841090009A20D /* CoreNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,7 +50,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC26A029783F130009A20D /* Stevia in Frameworks */,
+				F4DC26A629783F330009A20D /* SnackBar in Frameworks */,
+				F4DC26C62978400E0009A20D /* ProfileModule.framework in Frameworks */,
 				A57EA659E753BE285238AD9E /* Pods_HomeModule.framework in Frameworks */,
+				F4DC26C3297840060009A20D /* DetailModule.framework in Frameworks */,
+				F4DC26F1297840E20009A20D /* CoreManager.framework in Frameworks */,
+				F4DC26A329783F280009A20D /* NVActivityIndicatorView in Frameworks */,
+				F4DC26C9297840130009A20D /* FavoriteModule.framework in Frameworks */,
+				F4DC26F5297841090009A20D /* CoreNetwork.framework in Frameworks */,
+				F4DC26ED297840D90009A20D /* Common.framework in Frameworks */,
+				F4DC26A929783F3F0009A20D /* SDWebImage in Frameworks */,
+				F4DC26FD297841A60009A20D /* CoreExtension in Frameworks */,
+				F4DC26BF297840000009A20D /* CoreModel.framework in Frameworks */,
+				F4DC26FA2978411C0009A20D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +83,13 @@
 		BB7EDEF9D6874D458CEEAC3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC26F4297841090009A20D /* CoreNetwork.framework */,
+				F4DC26F0297840E20009A20D /* CoreManager.framework */,
+				F4DC26EC297840D90009A20D /* Common.framework */,
+				F4DC26C8297840130009A20D /* FavoriteModule.framework */,
+				F4DC26C52978400E0009A20D /* ProfileModule.framework */,
+				F4DC26C2297840060009A20D /* DetailModule.framework */,
+				F4DC26BE297840000009A20D /* CoreModel.framework */,
 				B991C28C8B8FD31663514E28 /* Pods_HomeModule.framework */,
 			);
 			name = Frameworks;
@@ -68,6 +116,10 @@
 		F4DC265A29783E7B0009A20D /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC269829783EFA0009A20D /* HomeProtocols.swift */,
+				F4DC269729783EFA0009A20D /* HomeRepo.swift */,
+				F4DC269629783EFA0009A20D /* HomeViewController.swift */,
+				F4DC269929783EFA0009A20D /* HomeViewModel.swift */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -100,6 +152,14 @@
 			dependencies = (
 			);
 			name = HomeModule;
+			packageProductDependencies = (
+				F4DC269F29783F130009A20D /* Stevia */,
+				F4DC26A229783F280009A20D /* NVActivityIndicatorView */,
+				F4DC26A529783F330009A20D /* SnackBar */,
+				F4DC26A829783F3F0009A20D /* SDWebImage */,
+				F4DC26F92978411C0009A20D /* Alamofire */,
+				F4DC26FC297841A60009A20D /* CoreExtension */,
+			);
 			productName = HomeModule;
 			productReference = F4DC265829783E7B0009A20D /* HomeModule.framework */;
 			productType = "com.apple.product-type.framework";
@@ -115,6 +175,7 @@
 				TargetAttributes = {
 					F4DC265729783E7B0009A20D = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -127,6 +188,14 @@
 				Base,
 			);
 			mainGroup = F4DC264E29783E7B0009A20D;
+			packageReferences = (
+				F4DC269E29783F130009A20D /* XCRemoteSwiftPackageReference "Stevia" */,
+				F4DC26A129783F280009A20D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar" */,
+				F4DC26A729783F3F0009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F4DC26F82978411C0009A20D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F4DC26FB297841A60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */,
+			);
 			productRefGroup = F4DC265929783E7B0009A20D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC269B29783EFA0009A20D /* HomeRepo.swift in Sources */,
+				F4DC269C29783EFA0009A20D /* HomeProtocols.swift in Sources */,
+				F4DC269A29783EFA0009A20D /* HomeViewController.swift in Sources */,
+				F4DC269D29783EFA0009A20D /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -306,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76AE8B48A3FCFB206856D2A4 /* Pods-HomeModule.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -325,9 +399,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.HomeModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED4D1DA22573617E043A0757 /* Pods-HomeModule.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -354,9 +433,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.HomeModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -382,6 +464,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4DC269E29783F130009A20D /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26A129783F280009A20D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26A729783F3F0009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26F82978411C0009A20D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26FB297841A60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benayaokta/BECoreExtension";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4DC269F29783F130009A20D /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC269E29783F130009A20D /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		F4DC26A229783F280009A20D /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26A129783F280009A20D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		F4DC26A529783F330009A20D /* SnackBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar" */;
+			productName = SnackBar;
+		};
+		F4DC26A829783F3F0009A20D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26A729783F3F0009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F4DC26F92978411C0009A20D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26F82978411C0009A20D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F4DC26FC297841A60009A20D /* CoreExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26FB297841A60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */;
+			productName = CoreExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4DC264F29783E7B0009A20D /* Project object */;
 }

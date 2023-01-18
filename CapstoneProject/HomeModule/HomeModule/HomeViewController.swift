@@ -16,8 +16,10 @@ import Common
 import CoreManager
 import CoreNetwork
 import ProfileModule
+import DetailModule
+import FavoriteModule
 
-final class HomeViewController: UIViewController {
+public final class HomeViewController: UIViewController {
     
     private let tableView: UITableView = UITableView(frame: .zero, style: .plain)
     private var cancellables: Set<AnyCancellable> = []
@@ -28,7 +30,7 @@ final class HomeViewController: UIViewController {
     private let searchController = UISearchController(searchResultsController: nil)
     private var searchResult: PassthroughSubject<String, Never> = PassthroughSubject<String, Never>()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupFavoriteButtonn()
         injection()
@@ -151,7 +153,7 @@ final class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    public func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .normal, title: "favorite.action.add".localized(id: "com.dicoding.expert.CapstoneProject")) { _, _, completionHandler in
             self.viewModel.addToFavorite(pair: self.filteredData[indexPath.row])
             
@@ -162,27 +164,27 @@ extension HomeViewController: UITableViewDelegate {
         return UISwipeActionsConfiguration(actions: [action])
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         self.navigationController?.pushViewController(DetailViewController(data: self.filteredData[indexPath.row]), animated: true)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
 }
 
 extension HomeViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredData.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueCell(withType: CapstoneTableViewCell.self, for: indexPath) as? CapstoneTableViewCell else { return UITableViewCell() }
         let cryptoData: AllPairUIModel = filteredData[indexPath.row]
         
@@ -202,7 +204,7 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 extension HomeViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
+    public func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else { return }
         searchResult.send(text)
     }

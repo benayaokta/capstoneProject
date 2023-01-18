@@ -9,6 +9,7 @@ import UIKit
 import Combine
 import CoreModel
 import CoreManager
+import DetailModule
 
 final class FavoriteRepo: FavoriteUseCase {
     var database: DatabaseManager

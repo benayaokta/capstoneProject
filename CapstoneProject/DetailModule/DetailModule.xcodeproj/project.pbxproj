@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		39A0D61113880C54EE85E596 /* Pods_DetailModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AE2B27FDFD6897DEC4E181 /* Pods_DetailModule.framework */; };
+		F4DC26B029783FAB0009A20D /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26AC29783FAB0009A20D /* DetailProtocol.swift */; };
+		F4DC26B129783FAB0009A20D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26AD29783FAB0009A20D /* DetailViewController.swift */; };
+		F4DC26B229783FAB0009A20D /* DetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26AE29783FAB0009A20D /* DetailRepo.swift */; };
+		F4DC26B329783FAB0009A20D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC26AF29783FAB0009A20D /* DetailViewModel.swift */; };
+		F4DC26B629783FC90009A20D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26B529783FC90009A20D /* SDWebImage */; };
+		F4DC26B929783FD20009A20D /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26B829783FD20009A20D /* Stevia */; };
+		F4DC26BB29783FE00009A20D /* CoreModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC26BA29783FE00009A20D /* CoreModel.framework */; };
+		F4DC26CD2978403D0009A20D /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4DC26CC2978403D0009A20D /* CoreExtension */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +23,11 @@
 		9DE7A55D6E279237BB8C00E5 /* Pods-DetailModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailModule.debug.xcconfig"; path = "Target Support Files/Pods-DetailModule/Pods-DetailModule.debug.xcconfig"; sourceTree = "<group>"; };
 		E9AE2B27FDFD6897DEC4E181 /* Pods_DetailModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetailModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC263C29783E700009A20D /* DetailModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DetailModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DC26AC29783FAB0009A20D /* DetailProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
+		F4DC26AD29783FAB0009A20D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4DC26AE29783FAB0009A20D /* DetailRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
+		F4DC26AF29783FAB0009A20D /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F4DC26BA29783FE00009A20D /* CoreModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC26B929783FD20009A20D /* Stevia in Frameworks */,
+				F4DC26CD2978403D0009A20D /* CoreExtension in Frameworks */,
+				F4DC26BB29783FE00009A20D /* CoreModel.framework in Frameworks */,
+				F4DC26B629783FC90009A20D /* SDWebImage in Frameworks */,
 				39A0D61113880C54EE85E596 /* Pods_DetailModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +49,7 @@
 		B0281BA46650158422FE0835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC26BA29783FE00009A20D /* CoreModel.framework */,
 				E9AE2B27FDFD6897DEC4E181 /* Pods_DetailModule.framework */,
 			);
 			name = Frameworks;
@@ -68,6 +86,10 @@
 		F4DC263E29783E700009A20D /* DetailModule */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC26AC29783FAB0009A20D /* DetailProtocol.swift */,
+				F4DC26AE29783FAB0009A20D /* DetailRepo.swift */,
+				F4DC26AD29783FAB0009A20D /* DetailViewController.swift */,
+				F4DC26AF29783FAB0009A20D /* DetailViewModel.swift */,
 			);
 			path = DetailModule;
 			sourceTree = "<group>";
@@ -100,6 +122,11 @@
 			dependencies = (
 			);
 			name = DetailModule;
+			packageProductDependencies = (
+				F4DC26B529783FC90009A20D /* SDWebImage */,
+				F4DC26B829783FD20009A20D /* Stevia */,
+				F4DC26CC2978403D0009A20D /* CoreExtension */,
+			);
 			productName = DetailModule;
 			productReference = F4DC263C29783E700009A20D /* DetailModule.framework */;
 			productType = "com.apple.product-type.framework";
@@ -115,6 +142,7 @@
 				TargetAttributes = {
 					F4DC263B29783E700009A20D = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -127,6 +155,11 @@
 				Base,
 			);
 			mainGroup = F4DC263229783E700009A20D;
+			packageReferences = (
+				F4DC26B429783FC90009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F4DC26B729783FD20009A20D /* XCRemoteSwiftPackageReference "Stevia" */,
+				F4DC26CB2978403D0009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */,
+			);
 			productRefGroup = F4DC263D29783E700009A20D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DC26B029783FAB0009A20D /* DetailProtocol.swift in Sources */,
+				F4DC26B129783FAB0009A20D /* DetailViewController.swift in Sources */,
+				F4DC26B229783FAB0009A20D /* DetailRepo.swift in Sources */,
+				F4DC26B329783FAB0009A20D /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -306,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DE7A55D6E279237BB8C00E5 /* Pods-DetailModule.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -316,6 +354,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +364,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.DetailModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 876FD85CDE020A20258167CE /* Pods-DetailModule.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -345,6 +389,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,9 +399,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.expert.DetailModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -382,6 +430,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4DC26B429783FC90009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26B729783FD20009A20D /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4DC26CB2978403D0009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benayaokta/BECoreExtension";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4DC26B529783FC90009A20D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26B429783FC90009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F4DC26B829783FD20009A20D /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26B729783FD20009A20D /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		F4DC26CC2978403D0009A20D /* CoreExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DC26CB2978403D0009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */;
+			productName = CoreExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4DC263329783E700009A20D /* Project object */;
 }
