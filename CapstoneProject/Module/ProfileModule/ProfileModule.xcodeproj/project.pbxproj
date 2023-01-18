@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F7ABB34B236748368AABBE9 /* Pods-ProfileModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileModule.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-ProfileModule/Pods-ProfileModule.debug.xcconfig"; sourceTree = "<group>"; };
-		71E12164757CD5E7B88367CB /* Pods-ProfileModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileModule.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-ProfileModule/Pods-ProfileModule.release.xcconfig"; sourceTree = "<group>"; };
+		6F7ABB34B236748368AABBE9 /* Pods-ProfileModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileModule.debug.xcconfig"; path = "Pods-ProfileModule.debug.xcconfig"; sourceTree = "<group>"; };
+		71E12164757CD5E7B88367CB /* Pods-ProfileModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileModule.release.xcconfig"; path = "Pods-ProfileModule.release.xcconfig"; sourceTree = "<group>"; };
 		A6FEAFC832DAF40139F593E2 /* Pods_ProfileModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProfileModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC260229783C820009A20D /* ProfileModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC261E29783CCF0009A20D /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 				71E12164757CD5E7B88367CB /* Pods-ProfileModule.release.xcconfig */,
 			);
 			name = Pods;
-			path = ../../Pods;
+			path = "../../../Pods/Target Support Files/Pods-ProfileModule";
 			sourceTree = "<group>";
 		};
 		F4DC25F829783C820009A20D = {

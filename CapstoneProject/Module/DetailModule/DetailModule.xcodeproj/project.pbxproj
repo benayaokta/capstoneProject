@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		876FD85CDE020A20258167CE /* Pods-DetailModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailModule.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-DetailModule/Pods-DetailModule.release.xcconfig"; sourceTree = "<group>"; };
-		9DE7A55D6E279237BB8C00E5 /* Pods-DetailModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailModule.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-DetailModule/Pods-DetailModule.debug.xcconfig"; sourceTree = "<group>"; };
+		876FD85CDE020A20258167CE /* Pods-DetailModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailModule.release.xcconfig"; path = "Pods-DetailModule.release.xcconfig"; sourceTree = "<group>"; };
+		9DE7A55D6E279237BB8C00E5 /* Pods-DetailModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailModule.debug.xcconfig"; path = "Pods-DetailModule.debug.xcconfig"; sourceTree = "<group>"; };
 		E9AE2B27FDFD6897DEC4E181 /* Pods_DetailModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetailModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC263C29783E700009A20D /* DetailModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DetailModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC26AC29783FAB0009A20D /* DetailProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 				876FD85CDE020A20258167CE /* Pods-DetailModule.release.xcconfig */,
 			);
 			name = Pods;
-			path = ../../Pods;
+			path = "../../../Pods/Target Support Files/Pods-DetailModule";
 			sourceTree = "<group>";
 		};
 		F4DC263229783E700009A20D = {
