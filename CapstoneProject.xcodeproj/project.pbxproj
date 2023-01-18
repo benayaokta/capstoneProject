@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AA34D25112B7637B8E8C828 /* Pods_CapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F012EC3C3C7CBBA25AE4F102 /* Pods_CapstoneProject.framework */; };
+		C6F17F861F23372099842072 /* Pods_CapstoneProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584FFE7DC511ABA769E38280 /* Pods_CapstoneProjectTests.framework */; };
 		F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA2292E60E60031ABFD /* AppDelegate.swift */; };
 		F4042FA5292E60E60031ABFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA4292E60E60031ABFD /* SceneDelegate.swift */; };
 		F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FA6292E60E60031ABFD /* HomeViewController.swift */; };
@@ -17,19 +19,19 @@
 		F4042FD2292E87E00031ABFD /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD1292E87E00031ABFD /* NetworkProtocol.swift */; };
 		F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD3292E87F60031ABFD /* APIConfiguration.swift */; };
 		F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD5292E8AE70031ABFD /* NetworkService.swift */; };
-		F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */; };
 		F4338ADA296C7B5000476422 /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4338AD9296C7B5000476422 /* CoreExtension */; };
 		F4338ADD296C823800476422 /* CoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = F4338ADC296C823800476422 /* CoreModel */; };
 		F4338AE4296C85A400476422 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4338AE6296C85A400476422 /* Localizable.strings */; };
 		F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */; };
 		F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BD293F7C450058361D /* DatabaseManager.swift */; };
 		F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */; };
-		F4C2D1C2293F94500058361D /* CapstoneSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C1293F94500058361D /* CapstoneSnackbar.swift */; };
 		F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C4293F96E10058361D /* DetailViewController.swift */; };
 		F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C6293F97190058361D /* DetailViewModel.swift */; };
 		F4C2D1C9293F971F0058361D /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C8293F971F0058361D /* DetailProtocol.swift */; };
 		F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1D9294212180058361D /* FavoriteProtocols.swift */; };
 		F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */; };
+		F4DC2517297835130009A20D /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC2510297833A70009A20D /* Common.framework */; };
+		F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC2510297833A70009A20D /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */; };
 		F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6782955A7470009DAC0 /* Stevia */; };
 		F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67E2955A76E0009DAC0 /* SDWebImage */; };
@@ -49,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F4DC250F297833A70009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC250B297833A60009A20D /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC24FF297833A60009A20D;
+			remoteInfo = Common;
+		};
 		F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4042F97292E60E60031ABFD /* Project object */;
@@ -58,7 +67,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F4DC2519297835130009A20D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1121C8A29A36E0F31DF77C2C /* Pods-CapstoneProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProjectTests.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProjectTests/Pods-CapstoneProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		37AE57331E9765B75DE01945 /* Pods-CapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
+		584FFE7DC511ABA769E38280 /* Pods_CapstoneProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA677E7CEA1CAFCD059BF4E2 /* Pods-CapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
+		E1320035BE3BF88667C30009 /* Pods-CapstoneProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneProjectTests/Pods-CapstoneProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F012EC3C3C7CBBA25AE4F102 /* Pods_CapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4042F9F292E60E60031ABFD /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4042FA2292E60E60031ABFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4042FA4292E60E60031ABFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,18 +100,17 @@
 		F4042FD1292E87E00031ABFD /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		F4042FD3292E87F60031ABFD /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		F4042FD5292E8AE70031ABFD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneTableViewCell.swift; sourceTree = "<group>"; };
 		F4338AE5296C85A400476422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4338AE8296C864700476422 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		F4C2D1BD293F7C450058361D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteEmptyView.swift; sourceTree = "<group>"; };
-		F4C2D1C1293F94500058361D /* CapstoneSnackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneSnackbar.swift; sourceTree = "<group>"; };
 		F4C2D1C4293F96E10058361D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F4C2D1C6293F97190058361D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F4C2D1C8293F971F0058361D /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
 		F4C2D1D9294212180058361D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		F4DC250B297833A60009A20D /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
 		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
@@ -107,7 +135,9 @@
 				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
+				F4DC2517297835130009A20D /* Common.framework in Frameworks */,
 				F4338ADD296C823800476422 /* CoreModel in Frameworks */,
+				7AA34D25112B7637B8E8C828 /* Pods_CapstoneProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,18 +146,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E2F69D295C917C0009DAC0 /* SDWebImage in Frameworks */,
+				C6F17F861F23372099842072 /* Pods_CapstoneProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3F251575AC69F33EB074F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37AE57331E9765B75DE01945 /* Pods-CapstoneProject.debug.xcconfig */,
+				DA677E7CEA1CAFCD059BF4E2 /* Pods-CapstoneProject.release.xcconfig */,
+				E1320035BE3BF88667C30009 /* Pods-CapstoneProjectTests.debug.xcconfig */,
+				1121C8A29A36E0F31DF77C2C /* Pods-CapstoneProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC9ABFFA4D53430B4EF19A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F012EC3C3C7CBBA25AE4F102 /* Pods_CapstoneProject.framework */,
+				584FFE7DC511ABA769E38280 /* Pods_CapstoneProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4042F96292E60E60031ABFD = {
 			isa = PBXGroup;
 			children = (
 				F4042FA1292E60E60031ABFD /* CapstoneProject */,
 				F4FB55BC2948B64C00790DC7 /* CapstoneProjectTests */,
 				F4042FA0292E60E60031ABFD /* Products */,
+				7C3F251575AC69F33EB074F4 /* Pods */,
+				DC9ABFFA4D53430B4EF19A5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,7 +196,7 @@
 		F4042FA1292E60E60031ABFD /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
-				F4C2D1BC293F7A0B0058361D /* Shared */,
+				F4DC250B297833A60009A20D /* Common.xcodeproj */,
 				F4042FB6292E61F10031ABFD /* App */,
 				F4042FBD292E64E10031ABFD /* Module */,
 				F4042FBF292E64ED0031ABFD /* Manager */,
@@ -217,15 +270,6 @@
 			path = Favorite;
 			sourceTree = "<group>";
 		};
-		F4C2D1BC293F7A0B0058361D /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				F4042FD9292E8F5A0031ABFD /* CapstoneTableViewCell.swift */,
-				F4C2D1C1293F94500058361D /* CapstoneSnackbar.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		F4C2D1C3293F96D60058361D /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +279,14 @@
 				F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		F4DC250C297833A60009A20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC2510297833A70009A20D /* Common.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F4FB55AE2948A7E700790DC7 /* Profile */ = {
@@ -272,10 +324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4042FB3292E60E80031ABFD /* Build configuration list for PBXNativeTarget "CapstoneProject" */;
 			buildPhases = (
+				42F660AB22A3808E7D3F2640 /* [CP] Check Pods Manifest.lock */,
 				F4042F9B292E60E60031ABFD /* Sources */,
 				F4042F9C292E60E60031ABFD /* Frameworks */,
 				F4042F9D292E60E60031ABFD /* Resources */,
 				F4B0B32729423E27007442C9 /* ShellScript */,
+				F4DC2519297835130009A20D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4FB55C12948B64D00790DC7 /* Build configuration list for PBXNativeTarget "CapstoneProjectTests" */;
 			buildPhases = (
+				18589EC65705AC97B5987265 /* [CP] Check Pods Manifest.lock */,
 				F4FB55B72948B64C00790DC7 /* Sources */,
 				F4FB55B82948B64C00790DC7 /* Frameworks */,
 				F4FB55B92948B64C00790DC7 /* Resources */,
@@ -358,6 +413,12 @@
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4DC250C297833A60009A20D /* Products */;
+					ProjectRef = F4DC250B297833A60009A20D /* Common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F4042F9E292E60E60031ABFD /* CapstoneProject */,
@@ -365,6 +426,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4DC2510297833A70009A20D /* Common.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Common.framework;
+			remoteRef = F4DC250F297833A70009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F4042F9D292E60E60031ABFD /* Resources */ = {
@@ -387,6 +458,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18589EC65705AC97B5987265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapstoneProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F660AB22A3808E7D3F2640 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapstoneProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F4B0B32729423E27007442C9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,7 +530,6 @@
 				F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */,
 				F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */,
 				F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */,
-				F4C2D1C2293F94500058361D /* CapstoneSnackbar.swift in Sources */,
 				F4E2F6932959DB410009DAC0 /* ProfileRepo.swift in Sources */,
 				F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */,
 				F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */,
@@ -424,7 +538,6 @@
 				F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */,
 				F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */,
 				F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */,
-				F4042FDA292E8F5A0031ABFD /* CapstoneTableViewCell.swift in Sources */,
 				F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */,
 				F4042FD2292E87E00031ABFD /* NetworkProtocol.swift in Sources */,
 				F4042FCD292E83840031ABFD /* HomeProtocols.swift in Sources */,
@@ -597,6 +710,7 @@
 		};
 		F4042FB4292E60E80031ABFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AE57331E9765B75DE01945 /* Pods-CapstoneProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -627,6 +741,7 @@
 		};
 		F4042FB5292E60E80031ABFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA677E7CEA1CAFCD059BF4E2 /* Pods-CapstoneProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -657,6 +772,7 @@
 		};
 		F4FB55C22948B64D00790DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1320035BE3BF88667C30009 /* Pods-CapstoneProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -676,6 +792,7 @@
 		};
 		F4FB55C32948B64D00790DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1121C8A29A36E0F31DF77C2C /* Pods-CapstoneProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

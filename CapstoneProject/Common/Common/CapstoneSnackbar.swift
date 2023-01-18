@@ -8,8 +8,8 @@
 import UIKit
 import SnackBar
 
-final class CapstoneSnackbar: SnackBar {
-    override var style: SnackBarStyle {
+public final class CapstoneSnackbar: SnackBar {
+    public override var style: SnackBarStyle {
         var style = SnackBarStyle()
         style.background = .systemBlue
         style.textColor = .white
@@ -17,8 +17,8 @@ final class CapstoneSnackbar: SnackBar {
     }
 }
 
-final class CapstoneErrorSnackbar: SnackBar {
-    override var style: SnackBarStyle {
+public final class CapstoneErrorSnackbar: SnackBar {
+    public override var style: SnackBarStyle {
         var style = SnackBarStyle()
         style.background = .systemRed
         style.textColor = .white
