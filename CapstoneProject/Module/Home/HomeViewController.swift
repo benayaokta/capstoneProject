@@ -12,6 +12,7 @@ import NVActivityIndicatorView
 import SnackBar
 import SDWebImage
 import CoreModel
+import CoreComponnent
 
 final class HomeViewController: UIViewController {
     

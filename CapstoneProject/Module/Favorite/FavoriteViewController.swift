@@ -11,6 +11,7 @@ import SDWebImage
 import Combine
 import CoreModel
 import CoreExtension
+import CoreComponnent
 
 final class FavoriteViewController: UIViewController {
     

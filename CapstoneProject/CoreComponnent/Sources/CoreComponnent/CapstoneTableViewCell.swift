@@ -8,14 +8,14 @@
 import UIKit
 import Stevia
 
-final class CapstoneTableViewCell: UITableViewCell {
+public final class CapstoneTableViewCell: UITableViewCell {
     
-    let coinDesc: UILabel = UILabel()
-    let coinImage: UIImageView = UIImageView()
-    let coinCurrencyUnit: UILabel = UILabel()
-    let blockerView: UIView = UIView()
+    public let coinDesc: UILabel = UILabel()
+    public let coinImage: UIImageView = UIImageView()
+    public let coinCurrencyUnit: UILabel = UILabel()
+    public let blockerView: UIView = UIView()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         commonInit()
     }
@@ -24,7 +24,7 @@ final class CapstoneTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
@@ -50,7 +50,7 @@ final class CapstoneTableViewCell: UITableViewCell {
         coinCurrencyUnit.textColor = UIColor.lightGray
     }
     
-    func setMaintenanceView() {
+    public func setMaintenanceView() {
         self.isUserInteractionEnabled = false
         blockerView.backgroundColor = UIColor.lightGray
         blockerView.isHidden = false
@@ -60,7 +60,7 @@ final class CapstoneTableViewCell: UITableViewCell {
         coinDesc.textColor = UIColor.white
     }
     
-    func setNormalCell() {
+    public func setNormalCell() {
         self.isUserInteractionEnabled = true
         blockerView.isHidden = true
         
