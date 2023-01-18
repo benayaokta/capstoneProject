@@ -20,7 +20,6 @@
 		F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD3292E87F60031ABFD /* APIConfiguration.swift */; };
 		F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD5292E8AE70031ABFD /* NetworkService.swift */; };
 		F4338ADA296C7B5000476422 /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4338AD9296C7B5000476422 /* CoreExtension */; };
-		F4338ADD296C823800476422 /* CoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = F4338ADC296C823800476422 /* CoreModel */; };
 		F4338AE4296C85A400476422 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4338AE6296C85A400476422 /* Localizable.strings */; };
 		F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */; };
 		F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BD293F7C450058361D /* DatabaseManager.swift */; };
@@ -32,6 +31,8 @@
 		F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */; };
 		F4DC2517297835130009A20D /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC2510297833A70009A20D /* Common.framework */; };
 		F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC2510297833A70009A20D /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4DC2575297838DA0009A20D /* CoreModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC255D297837F80009A20D /* CoreModel.framework */; };
+		F4DC2576297838DA0009A20D /* CoreModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC255D297837F80009A20D /* CoreModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */; };
 		F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6782955A7470009DAC0 /* Stevia */; };
 		F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67E2955A76E0009DAC0 /* SDWebImage */; };
@@ -58,6 +59,13 @@
 			remoteGlobalIDString = F4DC24FF297833A60009A20D;
 			remoteInfo = Common;
 		};
+		F4DC255C297837F80009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC2558297837F70009A20D /* CoreModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC254C297837F70009A20D;
+			remoteInfo = CoreModel;
+		};
 		F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4042F97292E60E60031ABFD /* Project object */;
@@ -75,6 +83,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */,
+				F4DC2576297838DA0009A20D /* CoreModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +120,7 @@
 		F4C2D1D9294212180058361D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		F4DC250B297833A60009A20D /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
+		F4DC2558297837F70009A20D /* CoreModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreModel.xcodeproj; path = CoreModel/CoreModel.xcodeproj; sourceTree = "<group>"; };
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
 		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
@@ -131,12 +141,12 @@
 				F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */,
 				F4338ADA296C7B5000476422 /* CoreExtension in Frameworks */,
 				F4E2F68B2955A8DD0009DAC0 /* Alamofire in Frameworks */,
+				F4DC2575297838DA0009A20D /* CoreModel.framework in Frameworks */,
 				F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */,
 				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
 				F4DC2517297835130009A20D /* Common.framework in Frameworks */,
-				F4338ADD296C823800476422 /* CoreModel in Frameworks */,
 				7AA34D25112B7637B8E8C828 /* Pods_CapstoneProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,8 +206,9 @@
 		F4042FA1292E60E60031ABFD /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
-				F4DC250B297833A60009A20D /* Common.xcodeproj */,
 				F4042FB6292E61F10031ABFD /* App */,
+				F4DC2558297837F70009A20D /* CoreModel.xcodeproj */,
+				F4DC250B297833A60009A20D /* Common.xcodeproj */,
 				F4042FBD292E64E10031ABFD /* Module */,
 				F4042FBF292E64ED0031ABFD /* Manager */,
 				F4042FD0292E87CC0031ABFD /* Service */,
@@ -289,6 +300,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F4DC2559297837F70009A20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC255D297837F80009A20D /* CoreModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F4FB55AE2948A7E700790DC7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,7 +363,6 @@
 				F4E2F6872955A8370009DAC0 /* SnackBar */,
 				F4E2F68A2955A8DD0009DAC0 /* Alamofire */,
 				F4338AD9296C7B5000476422 /* CoreExtension */,
-				F4338ADC296C823800476422 /* CoreModel */,
 			);
 			productName = CapstoneProject;
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
@@ -409,7 +427,6 @@
 				F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */,
 				F4E2F6892955A8DD0009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F4338AD8296C7B4F00476422 /* XCRemoteSwiftPackageReference "BECoreExtension" */,
-				F4338ADB296C823800476422 /* XCRemoteSwiftPackageReference "CoreModelCapstone" */,
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
@@ -417,6 +434,10 @@
 				{
 					ProductGroup = F4DC250C297833A60009A20D /* Products */;
 					ProjectRef = F4DC250B297833A60009A20D /* Common.xcodeproj */;
+				},
+				{
+					ProductGroup = F4DC2559297837F70009A20D /* Products */;
+					ProjectRef = F4DC2558297837F70009A20D /* CoreModel.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -433,6 +454,13 @@
 			fileType = wrapper.framework;
 			path = Common.framework;
 			remoteRef = F4DC250F297833A70009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4DC255D297837F80009A20D /* CoreModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreModel.framework;
+			remoteRef = F4DC255C297837F80009A20D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -851,14 +879,6 @@
 				kind = branch;
 			};
 		};
-		F4338ADB296C823800476422 /* XCRemoteSwiftPackageReference "CoreModelCapstone" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/benayaokta/CoreModelCapstone";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F4E2F6742955A7360009DAC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -914,11 +934,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4338AD8296C7B4F00476422 /* XCRemoteSwiftPackageReference "BECoreExtension" */;
 			productName = CoreExtension;
-		};
-		F4338ADC296C823800476422 /* CoreModel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4338ADB296C823800476422 /* XCRemoteSwiftPackageReference "CoreModelCapstone" */;
-			productName = CoreModel;
 		};
 		F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;

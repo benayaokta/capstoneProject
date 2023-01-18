@@ -18,3 +18,8 @@ target 'Common' do
   inherit! :search_paths
   project '../CapstoneProject/CapstoneProject/Common/Common.xcodeproj'
 end
+
+target 'CoreModel' do
+  inherit! :search_paths
+  project '../CapstoneProject/CapstoneProject/CoreModel/CoreModel.xcodeproj'
+end
