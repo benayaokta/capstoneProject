@@ -19,4 +19,16 @@
    <FileRef
       location = "group:CapstoneProject/CoreNetwork/CoreNetwork.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CapstoneProject/DetailModule/DetailModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CapstoneProject/FavoriteModule/FavoriteModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CapstoneProject/HomeModule/HomeModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CapstoneProject/ProfileModule/ProfileModule.xcodeproj">
+   </FileRef>
 </Workspace>

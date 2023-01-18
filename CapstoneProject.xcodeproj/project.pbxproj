@@ -85,6 +85,27 @@
 			remoteGlobalIDString = F4DC260229783C820009A20D;
 			remoteInfo = ProfileModule;
 		};
+		F4DC264C29783E710009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC264829783E700009A20D /* DetailModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC263C29783E700009A20D;
+			remoteInfo = DetailModule;
+		};
+		F4DC266829783E7C0009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC266429783E7B0009A20D /* HomeModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC265829783E7B0009A20D;
+			remoteInfo = HomeModule;
+		};
+		F4DC268429783E880009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC268029783E870009A20D /* FavoriteModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC267429783E870009A20D;
+			remoteInfo = FavoriteModule;
+		};
 		F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4042F97292E60E60031ABFD /* Project object */;
@@ -142,6 +163,9 @@
 		F4DC25A9297839A80009A20D /* CoreManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreManager.xcodeproj; path = CoreManager/CoreManager.xcodeproj; sourceTree = "<group>"; };
 		F4DC25CF29783AA80009A20D /* CoreNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetwork.xcodeproj; path = CoreNetwork/CoreNetwork.xcodeproj; sourceTree = "<group>"; };
 		F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProfileModule.xcodeproj; path = CapstoneProject/ProfileModule/ProfileModule.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F4DC264829783E700009A20D /* DetailModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DetailModule.xcodeproj; path = CapstoneProject/DetailModule/DetailModule.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F4DC266429783E7B0009A20D /* HomeModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HomeModule.xcodeproj; path = CapstoneProject/HomeModule/HomeModule.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F4DC268029783E870009A20D /* FavoriteModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FavoriteModule.xcodeproj; path = CapstoneProject/FavoriteModule/FavoriteModule.xcodeproj; sourceTree = SOURCE_ROOT; };
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
 		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
@@ -252,6 +276,9 @@
 		F4042FBD292E64E10031ABFD /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC268029783E870009A20D /* FavoriteModule.xcodeproj */,
+				F4DC266429783E7B0009A20D /* HomeModule.xcodeproj */,
+				F4DC264829783E700009A20D /* DetailModule.xcodeproj */,
 				F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */,
 				F4C2D1C3293F96D60058361D /* Detail */,
 				F4C2D1B9293F77B10058361D /* Favorite */,
@@ -330,6 +357,30 @@
 			isa = PBXGroup;
 			children = (
 				F4DC261329783C830009A20D /* ProfileModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4DC264929783E700009A20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC264D29783E710009A20D /* DetailModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4DC266529783E7B0009A20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC266929783E7C0009A20D /* HomeModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4DC268129783E870009A20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC268529783E880009A20D /* FavoriteModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -463,6 +514,18 @@
 					ProjectRef = F4DC25CF29783AA80009A20D /* CoreNetwork.xcodeproj */;
 				},
 				{
+					ProductGroup = F4DC264929783E700009A20D /* Products */;
+					ProjectRef = F4DC264829783E700009A20D /* DetailModule.xcodeproj */;
+				},
+				{
+					ProductGroup = F4DC268129783E870009A20D /* Products */;
+					ProjectRef = F4DC268029783E870009A20D /* FavoriteModule.xcodeproj */;
+				},
+				{
+					ProductGroup = F4DC266529783E7B0009A20D /* Products */;
+					ProjectRef = F4DC266429783E7B0009A20D /* HomeModule.xcodeproj */;
+				},
+				{
 					ProductGroup = F4DC260F29783C820009A20D /* Products */;
 					ProjectRef = F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */;
 				},
@@ -509,6 +572,27 @@
 			fileType = wrapper.framework;
 			path = ProfileModule.framework;
 			remoteRef = F4DC261229783C830009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4DC264D29783E710009A20D /* DetailModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DetailModule.framework;
+			remoteRef = F4DC264C29783E710009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4DC266929783E7C0009A20D /* HomeModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HomeModule.framework;
+			remoteRef = F4DC266829783E7C0009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4DC268529783E880009A20D /* FavoriteModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FavoriteModule.framework;
+			remoteRef = F4DC268429783E880009A20D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
