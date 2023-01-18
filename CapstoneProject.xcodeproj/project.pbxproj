@@ -18,8 +18,8 @@
 		F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD3292E87F60031ABFD /* APIConfiguration.swift */; };
 		F4042FD6292E8AE70031ABFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4042FD5292E8AE70031ABFD /* NetworkService.swift */; };
 		F40C99A129782C3C00B177C9 /* CoreComponnent in Frameworks */ = {isa = PBXBuildFile; productRef = F40C99A029782C3C00B177C9 /* CoreComponnent */; };
+		F40C99A429782DA700B177C9 /* CoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = F40C99A329782DA700B177C9 /* CoreModel */; };
 		F4338ADA296C7B5000476422 /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4338AD9296C7B5000476422 /* CoreExtension */; };
-		F4338ADD296C823800476422 /* CoreModel in Frameworks */ = {isa = PBXBuildFile; productRef = F4338ADC296C823800476422 /* CoreModel */; };
 		F4338AE4296C85A400476422 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4338AE6296C85A400476422 /* Localizable.strings */; };
 		F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */; };
 		F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BD293F7C450058361D /* DatabaseManager.swift */; };
@@ -71,6 +71,7 @@
 		F4042FD3292E87F60031ABFD /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		F4042FD5292E8AE70031ABFD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F40C999E29782C3300B177C9 /* CoreComponnent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreComponnent; sourceTree = "<group>"; };
+		F40C99A229782D7B00B177C9 /* CoreModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreModel; sourceTree = "<group>"; };
 		F4338AE5296C85A400476422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4338AE8296C864700476422 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -105,8 +106,8 @@
 				F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */,
 				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
+				F40C99A429782DA700B177C9 /* CoreModel in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
-				F4338ADD296C823800476422 /* CoreModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +144,7 @@
 		F4042FA1292E60E60031ABFD /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				F40C99A229782D7B00B177C9 /* CoreModel */,
 				F40C999E29782C3300B177C9 /* CoreComponnent */,
 				F4042FB6292E61F10031ABFD /* App */,
 				F4042FBD292E64E10031ABFD /* Module */,
@@ -288,8 +290,8 @@
 				F4E2F6872955A8370009DAC0 /* SnackBar */,
 				F4E2F68A2955A8DD0009DAC0 /* Alamofire */,
 				F4338AD9296C7B5000476422 /* CoreExtension */,
-				F4338ADC296C823800476422 /* CoreModel */,
 				F40C99A029782C3C00B177C9 /* CoreComponnent */,
+				F40C99A329782DA700B177C9 /* CoreModel */,
 			);
 			productName = CapstoneProject;
 			productReference = F4042F9F292E60E60031ABFD /* CapstoneProject.app */;
@@ -353,7 +355,6 @@
 				F4E2F6862955A8370009DAC0 /* XCRemoteSwiftPackageReference "SnackBar" */,
 				F4E2F6892955A8DD0009DAC0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F4338AD8296C7B4F00476422 /* XCRemoteSwiftPackageReference "BECoreExtension" */,
-				F4338ADB296C823800476422 /* XCRemoteSwiftPackageReference "CoreModelCapstone" */,
 			);
 			productRefGroup = F4042FA0292E60E60031ABFD /* Products */;
 			projectDirPath = "";
@@ -731,14 +732,6 @@
 				kind = branch;
 			};
 		};
-		F4338ADB296C823800476422 /* XCRemoteSwiftPackageReference "CoreModelCapstone" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/benayaokta/CoreModelCapstone";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F4E2F6742955A7360009DAC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -794,15 +787,14 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreComponnent;
 		};
+		F40C99A329782DA700B177C9 /* CoreModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreModel;
+		};
 		F4338AD9296C7B5000476422 /* CoreExtension */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4338AD8296C7B4F00476422 /* XCRemoteSwiftPackageReference "BECoreExtension" */;
 			productName = CoreExtension;
-		};
-		F4338ADC296C823800476422 /* CoreModel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4338ADB296C823800476422 /* XCRemoteSwiftPackageReference "CoreModelCapstone" */;
-			productName = CoreModel;
 		};
 		F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;

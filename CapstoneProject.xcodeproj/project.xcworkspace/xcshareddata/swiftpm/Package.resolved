@@ -19,15 +19,6 @@
       }
     },
     {
-      "identity" : "coremodelcapstone",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/benayaokta/CoreModelCapstone",
-      "state" : {
-        "branch" : "main",
-        "revision" : "09b2cbdd295b425c7e6c9fbdbd24d97ba825e2da"
-      }
-    },
-    {
       "identity" : "iqkeyboardmanager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hackiftekhar/IQKeyboardManager",
