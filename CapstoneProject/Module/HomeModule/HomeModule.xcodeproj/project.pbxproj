@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -180,7 +180,7 @@
 				};
 			};
 			buildConfigurationList = F4DC265229783E7B0009A20D /* Build configuration list for PBXProject "HomeModule" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -191,7 +191,7 @@
 			packageReferences = (
 				F4DC269E29783F130009A20D /* XCRemoteSwiftPackageReference "Stevia" */,
 				F4DC26A129783F280009A20D /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
-				F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar.swift" */,
+				F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar" */,
 				F4DC26A729783F3F0009A20D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				F4DC26F82978411C0009A20D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F4DC26FB297841A60009A20D /* XCRemoteSwiftPackageReference "BECoreExtension" */,
@@ -482,7 +482,7 @@
 				kind = branch;
 			};
 		};
-		F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar.swift" */ = {
+		F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
 			requirement = {
@@ -529,7 +529,7 @@
 		};
 		F4DC26A529783F330009A20D /* SnackBar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar.swift" */;
+			package = F4DC26A429783F330009A20D /* XCRemoteSwiftPackageReference "SnackBar" */;
 			productName = SnackBar;
 		};
 		F4DC26A829783F3F0009A20D /* SDWebImage */ = {
