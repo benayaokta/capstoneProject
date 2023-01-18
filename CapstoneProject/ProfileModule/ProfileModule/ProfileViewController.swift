@@ -10,14 +10,14 @@ import Stevia
 import Combine
 import CoreExtension
 
-class ProfileViewController: UIViewController {
+public final class ProfileViewController: UIViewController {
     private let profilePicture: UIImageView = UIImageView()
     private let nameLabel: UILabel = UILabel()
     private let descriptionLabel: UILabel = UILabel()
     private var viewModel: ProfileViewModelProtocol!
     private var cancellables: Set<AnyCancellable> = []
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         injection()
         setupCombine()
@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupStyle() {
-        self.title = "profile.title".localized(id: AppDelegate.mainBundle)
+        self.title = "profile.title".localized(id: "com.dicoding.expert.CapstoneProject")
         self.view.backgroundColor = .white
         
         nameLabel.font = UIFont.systemFont(ofSize: 16, weight: .semibold)

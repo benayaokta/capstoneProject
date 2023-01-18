@@ -33,6 +33,8 @@
 		F4DC25B8297839E50009A20D /* CoreManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC25AE297839A80009A20D /* CoreManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4DC25F029783B800009A20D /* CoreNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC25D429783AA80009A20D /* CoreNetwork.framework */; };
 		F4DC25F129783B800009A20D /* CoreNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC25D429783AA80009A20D /* CoreNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4DC262629783CDD0009A20D /* ProfileModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC261329783C830009A20D /* ProfileModule.framework */; };
+		F4DC262729783CDD0009A20D /* ProfileModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC261329783C830009A20D /* ProfileModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */; };
 		F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6782955A7470009DAC0 /* Stevia */; };
 		F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67E2955A76E0009DAC0 /* SDWebImage */; };
@@ -42,11 +44,7 @@
 		F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */; };
 		F4E2F68F2959D5450009DAC0 /* FavoriteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */; };
 		F4E2F6912959DA4F0009DAC0 /* DetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */; };
-		F4E2F6932959DB410009DAC0 /* ProfileRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F6922959DB410009DAC0 /* ProfileRepo.swift */; };
 		F4E2F69D295C917C0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F69C295C917C0009DAC0 /* SDWebImage */; };
-		F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */; };
-		F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */; };
-		F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */; };
 		F4FB55BE2948B64C00790DC7 /* CapstoneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */; };
 		F4FB55C62948B68100790DC7 /* HomeUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +78,13 @@
 			remoteGlobalIDString = F4DC25C329783AA80009A20D;
 			remoteInfo = CoreNetwork;
 		};
+		F4DC261229783C830009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC260229783C820009A20D;
+			remoteInfo = ProfileModule;
+		};
 		F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4042F97292E60E60031ABFD /* Project object */;
@@ -98,6 +103,7 @@
 			files = (
 				F4DC25F129783B800009A20D /* CoreNetwork.framework in Embed Frameworks */,
 				F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */,
+				F4DC262729783CDD0009A20D /* ProfileModule.framework in Embed Frameworks */,
 				F4DC25B8297839E50009A20D /* CoreManager.framework in Embed Frameworks */,
 				F4DC2576297838DA0009A20D /* CoreModel.framework in Embed Frameworks */,
 			);
@@ -135,13 +141,10 @@
 		F4DC2558297837F70009A20D /* CoreModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreModel.xcodeproj; path = CoreModel/CoreModel.xcodeproj; sourceTree = "<group>"; };
 		F4DC25A9297839A80009A20D /* CoreManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreManager.xcodeproj; path = CoreManager/CoreManager.xcodeproj; sourceTree = "<group>"; };
 		F4DC25CF29783AA80009A20D /* CoreNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetwork.xcodeproj; path = CoreNetwork/CoreNetwork.xcodeproj; sourceTree = "<group>"; };
+		F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProfileModule.xcodeproj; path = CapstoneProject/ProfileModule/ProfileModule.xcodeproj; sourceTree = SOURCE_ROOT; };
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
 		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
-		F4E2F6922959DB410009DAC0 /* ProfileRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepo.swift; sourceTree = "<group>"; };
-		F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
-		F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		F4FB55BB2948B64C00790DC7 /* CapstoneProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FB55BD2948B64C00790DC7 /* CapstoneProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneProjectTests.swift; sourceTree = "<group>"; };
 		F4FB55C52948B68100790DC7 /* HomeUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCaseTest.swift; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 				F4DC25B7297839E50009A20D /* CoreManager.framework in Frameworks */,
 				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
+				F4DC262629783CDD0009A20D /* ProfileModule.framework in Frameworks */,
 				F4DC25F029783B800009A20D /* CoreNetwork.framework in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
 				F4DC2517297835130009A20D /* Common.framework in Frameworks */,
@@ -248,7 +252,7 @@
 		F4042FBD292E64E10031ABFD /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				F4FB55AE2948A7E700790DC7 /* Profile */,
+				F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */,
 				F4C2D1C3293F96D60058361D /* Detail */,
 				F4C2D1B9293F77B10058361D /* Favorite */,
 				F4042FC6292E7BD50031ABFD /* Home */,
@@ -322,15 +326,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4FB55AE2948A7E700790DC7 /* Profile */ = {
+		F4DC260F29783C820009A20D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4FB55B12948AB3900790DC7 /* ProfileProtocol.swift */,
-				F4FB55AF2948A7F300790DC7 /* ProfileViewController.swift */,
-				F4FB55B32948AB4000790DC7 /* ProfileViewModel.swift */,
-				F4E2F6922959DB410009DAC0 /* ProfileRepo.swift */,
+				F4DC261329783C830009A20D /* ProfileModule.framework */,
 			);
-			path = Profile;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F4FB55BC2948B64C00790DC7 /* CapstoneProjectTests */ = {
@@ -461,6 +462,10 @@
 					ProductGroup = F4DC25D029783AA80009A20D /* Products */;
 					ProjectRef = F4DC25CF29783AA80009A20D /* CoreNetwork.xcodeproj */;
 				},
+				{
+					ProductGroup = F4DC260F29783C820009A20D /* Products */;
+					ProjectRef = F4DC260E29783C820009A20D /* ProfileModule.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -497,6 +502,13 @@
 			fileType = wrapper.framework;
 			path = CoreNetwork.framework;
 			remoteRef = F4DC25D329783AA80009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4DC261329783C830009A20D /* ProfileModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProfileModule.framework;
+			remoteRef = F4DC261229783C830009A20D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -593,15 +605,11 @@
 				F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */,
 				F4042FA7292E60E60031ABFD /* HomeViewController.swift in Sources */,
 				F4C2D1DC2942121E0058361D /* FavoriteViewModel.swift in Sources */,
-				F4E2F6932959DB410009DAC0 /* ProfileRepo.swift in Sources */,
 				F4042FA3292E60E60031ABFD /* AppDelegate.swift in Sources */,
 				F4C2D1DA294212180058361D /* FavoriteProtocols.swift in Sources */,
 				F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */,
-				F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */,
 				F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */,
-				F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */,
 				F4042FCD292E83840031ABFD /* HomeProtocols.swift in Sources */,
-				F4FB55B02948A7F300790DC7 /* ProfileViewController.swift in Sources */,
 				F4E2F6912959DA4F0009DAC0 /* DetailRepo.swift in Sources */,
 				F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */,
 				F4E2F68F2959D5450009DAC0 /* FavoriteRepo.swift in Sources */,

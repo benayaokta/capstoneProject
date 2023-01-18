@@ -33,3 +33,8 @@ target 'CoreNetwork' do
   inherit! :search_paths
   project '../CapstoneProject/CapstoneProject/CoreNetwork/CoreNetwork.xcodeproj'
 end
+
+target 'ProfileModule' do
+  inherit! :search_paths
+  project '../CapstoneProject/CapstoneProject/ProfileModule/ProfileModule.xcodeproj'
+end

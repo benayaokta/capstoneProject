@@ -11,7 +11,7 @@ import IQKeyboardManagerSwift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    public static let mainBundle: String = "com.dicoding.expert.CapstoneProject"
+//    public static let mainBundle: String = "com.dicoding.expert.CapstoneProject"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

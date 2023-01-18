@@ -44,7 +44,7 @@ final class FavoriteViewController: UIViewController {
     }
     
     private func setupComponent() {
-        self.title = "favorite.title".localized(id: AppDelegate.mainBundle)
+        self.title = "favorite.title".localized(id: "com.dicoding.expert.CapstoneProject")
         
         favoriteTableView.delegate = self
         favoriteTableView.dataSource = self
@@ -72,7 +72,7 @@ extension FavoriteViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .normal, title: "favorite.action.remove".localized(id: AppDelegate.mainBundle)) { _, _, completionHandler in
+        let action = UIContextualAction(style: .normal, title: "favorite.action.remove".localized(id: "com.dicoding.expert.CapstoneProject")) { _, _, completionHandler in
             self.viewModel.removeFromFavorite(pair: self.viewModel.favoriteList[indexPath.row])
             completionHandler(true)
         }

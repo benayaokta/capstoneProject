@@ -15,6 +15,7 @@ import CoreModel
 import Common
 import CoreManager
 import CoreNetwork
+import ProfileModule
 
 final class HomeViewController: UIViewController {
     
@@ -53,7 +54,7 @@ final class HomeViewController: UIViewController {
     }
 
     private func setupStyle() {
-        self.title = "home.title".localized(id: AppDelegate.mainBundle)
+        self.title = "home.title".localized(id: "com.dicoding.expert.CapstoneProject")
     }
     
     private func setupComponent() {
@@ -64,15 +65,15 @@ final class HomeViewController: UIViewController {
         searchController.searchResultsUpdater = self
         tableView.tableHeaderView = searchController.searchBar
         
-        refreshControl.attributedTitle = NSAttributedString(string: "general.pull.refresh".localized(id: AppDelegate.mainBundle))
+        refreshControl.attributedTitle = NSAttributedString(string: "general.pull.refresh".localized(id: "com.dicoding.expert.CapstoneProject"))
         refreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
         tableView.refreshControl = refreshControl
     }
     
     private func setupFavoriteButtonn() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "profile.title".localized(id: AppDelegate.mainBundle), style: .plain, target: self, action: #selector(goToProfile))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "profile.title".localized(id: "com.dicoding.expert.CapstoneProject"), style: .plain, target: self, action: #selector(goToProfile))
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "favorite.title".localized(id: AppDelegate.mainBundle), style: .plain, target: self, action: #selector(goToFavorite))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "favorite.title".localized(id: "com.dicoding.expert.CapstoneProject"), style: .plain, target: self, action: #selector(goToFavorite))
     }
     
     @objc private func goToFavorite() {
@@ -151,7 +152,7 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .normal, title: "favorite.action.add".localized(id: AppDelegate.mainBundle)) { _, _, completionHandler in
+        let action = UIContextualAction(style: .normal, title: "favorite.action.add".localized(id: "com.dicoding.expert.CapstoneProject")) { _, _, completionHandler in
             self.viewModel.addToFavorite(pair: self.filteredData[indexPath.row])
             
             completionHandler(true)
