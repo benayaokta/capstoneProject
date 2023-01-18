@@ -8,9 +8,9 @@ workflows:
           XCODE_PROJECT: "CapstoneProject.xcodeproj" # Isikan nama project Anda.
           XCODE_SCHEME: "CapstoneProject" # Isikan nama scheme project Anda.
     scripts:
-      - name: Pod install
-        script: |
-          pod install
+#      - name: Pod install
+#        script: |
+#          pod install
       - name: Run tests
         script: |
           xcodebuild \
