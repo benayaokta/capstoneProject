@@ -10,7 +10,7 @@ import CoreModel
 import CoreManager
 import CoreNetwork
 
-protocol HomeViewModelProtocol {
+public protocol HomeViewModelProtocol {
     var isLoading: PassthroughSubject<Bool, Never> { get set }
     var errorSnackbar: PassthroughSubject<String, Never> { get set }
     var normalSnackbar: PassthroughSubject<String, Never> { get set }
@@ -23,7 +23,7 @@ protocol HomeViewModelProtocol {
 }
 
 
-protocol HomeUseCase {    
+protocol HomeUseCase {
     func getAllPairs() -> AnyPublisher<[AllPairModel], Error>
     func saveToFavorite(pair: AllPairEntity) -> AnyPublisher<String, FavoriteErrorEnum>
     
