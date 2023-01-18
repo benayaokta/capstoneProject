@@ -9,10 +9,10 @@ import Foundation
 import Alamofire
 import Combine
 
-final class NetworkService: NetworkProtocol {
-    init() { }
+public final class NetworkService: NetworkProtocol {
+    public init() { }
     
-    func request<T>(config: APIConfiguration,
+    public func request<T>(config: APIConfiguration,
                     object: T.Type,
                     completion: @escaping (T?, AFError?) -> Void) where T : Decodable, T : Encodable {
         AF.request(config)

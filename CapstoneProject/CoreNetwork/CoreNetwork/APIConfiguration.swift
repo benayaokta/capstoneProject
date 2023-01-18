@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-enum APIConfiguration: URLRequestConvertible {
+public enum APIConfiguration: URLRequestConvertible {
 
     case getAllPairs
     
@@ -39,7 +39,7 @@ enum APIConfiguration: URLRequestConvertible {
     }
     
     
-    func asURLRequest() throws -> URLRequest {
+    public func asURLRequest() throws -> URLRequest {
         let url = try baseURL.asURL()
         
         var request = URLRequest(url: url.appendingPathComponent(path))

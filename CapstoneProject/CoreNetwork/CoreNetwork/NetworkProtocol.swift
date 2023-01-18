@@ -8,7 +8,7 @@
 import Alamofire
 import Combine
 
-protocol NetworkProtocol {
+public protocol NetworkProtocol {
     func request<T: Codable>(config: APIConfiguration, object: T.Type, completion: @escaping (T?, AFError?) -> Void)
 }
 
