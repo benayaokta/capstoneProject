@@ -5,14 +5,12 @@ use_frameworks!
 workspace 'CapstoneProject'
 
 target 'CapstoneProject' do
-  
-  target 'CapstoneProjectTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
 
+target 'CapstoneProjectTests' do
+  inherit! :search_paths
+end
 
 target 'Common' do
   inherit! :search_paths
