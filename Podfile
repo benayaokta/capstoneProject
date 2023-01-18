@@ -23,3 +23,8 @@ target 'CoreModel' do
   inherit! :search_paths
   project '../CapstoneProject/CapstoneProject/CoreModel/CoreModel.xcodeproj'
 end
+
+target 'CoreManager' do
+  inherit! :search_paths
+  project '../CapstoneProject/CapstoneProject/CoreManager/CoreManager.xcodeproj'
+end

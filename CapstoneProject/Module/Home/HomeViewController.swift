@@ -13,6 +13,7 @@ import SnackBar
 import SDWebImage
 import CoreModel
 import Common
+import CoreManager
 
 final class HomeViewController: UIViewController {
     

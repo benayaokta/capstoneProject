@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class DatabaseManager {
-    static let shared: DatabaseManager = DatabaseManager()
+public final class DatabaseManager {
+    public static let shared: DatabaseManager = DatabaseManager()
     private let userDefault: UserDefaults
     
-    enum AllPairError: String {
+    public enum AllPairError: String {
         case duplicateItem = "Already have this item"
         case noPair = "Cannot find this item"
     }
@@ -20,14 +20,14 @@ final class DatabaseManager {
         userDefault = UserDefaults.init(suiteName: "CapstoneProject")!
     }
     
-    func setData<T: Codable>(value: T, key: String) {
+    public func setData<T: Codable>(value: T, key: String) {
         let encoder: JSONEncoder = JSONEncoder()
         if let encoded = try? encoder.encode(value) {
             userDefault.set(encoded, forKey: key)
         }
     }
     
-    func getData<T: Codable>(type: T.Type, forKey: String) -> T? {
+    public func getData<T: Codable>(type: T.Type, forKey: String) -> T? {
         if let data = userDefault.object(forKey: forKey) as? Data {
             let decoder: JSONDecoder = JSONDecoder()
             if let value = try? decoder.decode(T.self, from: data) {

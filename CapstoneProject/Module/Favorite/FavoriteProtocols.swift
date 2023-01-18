@@ -8,6 +8,7 @@
 import UIKit.UIViewController
 import Combine
 import CoreModel
+import CoreManager
 
 protocol FavoriteViewModelProtocol {
     var favoriteList: [AllPairUIModel] { get set }

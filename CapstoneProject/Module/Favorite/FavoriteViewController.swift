@@ -12,6 +12,7 @@ import Combine
 import CoreModel
 import CoreExtension
 import Common
+import CoreManager
 
 final class FavoriteViewController: UIViewController {
     

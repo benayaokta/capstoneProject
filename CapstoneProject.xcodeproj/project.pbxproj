@@ -22,7 +22,6 @@
 		F4338ADA296C7B5000476422 /* CoreExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F4338AD9296C7B5000476422 /* CoreExtension */; };
 		F4338AE4296C85A400476422 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4338AE6296C85A400476422 /* Localizable.strings */; };
 		F4C2D1BB293F77C30058361D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */; };
-		F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BD293F7C450058361D /* DatabaseManager.swift */; };
 		F4C2D1C0293F86FC0058361D /* FavoriteEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */; };
 		F4C2D1C5293F96E10058361D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C4293F96E10058361D /* DetailViewController.swift */; };
 		F4C2D1C7293F97190058361D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2D1C6293F97190058361D /* DetailViewModel.swift */; };
@@ -33,6 +32,8 @@
 		F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC2510297833A70009A20D /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4DC2575297838DA0009A20D /* CoreModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC255D297837F80009A20D /* CoreModel.framework */; };
 		F4DC2576297838DA0009A20D /* CoreModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC255D297837F80009A20D /* CoreModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4DC25B7297839E50009A20D /* CoreManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC25AE297839A80009A20D /* CoreManager.framework */; };
+		F4DC25B8297839E50009A20D /* CoreManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC25AE297839A80009A20D /* CoreManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6752955A7360009DAC0 /* IQKeyboardManagerSwift */; };
 		F4E2F6792955A7470009DAC0 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F6782955A7470009DAC0 /* Stevia */; };
 		F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F4E2F67E2955A76E0009DAC0 /* SDWebImage */; };
@@ -66,6 +67,13 @@
 			remoteGlobalIDString = F4DC254C297837F70009A20D;
 			remoteInfo = CoreModel;
 		};
+		F4DC25AD297839A80009A20D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC25A9297839A80009A20D /* CoreManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4DC259D297839A80009A20D;
+			remoteInfo = CoreManager;
+		};
 		F4FB55BF2948B64C00790DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4042F97292E60E60031ABFD /* Project object */;
@@ -83,6 +91,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F4DC2518297835130009A20D /* Common.framework in Embed Frameworks */,
+				F4DC25B8297839E50009A20D /* CoreManager.framework in Embed Frameworks */,
 				F4DC2576297838DA0009A20D /* CoreModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -112,7 +121,6 @@
 		F4338AE5296C85A400476422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4338AE8296C864700476422 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4C2D1BA293F77C30058361D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		F4C2D1BD293F7C450058361D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F4C2D1BF293F86FC0058361D /* FavoriteEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteEmptyView.swift; sourceTree = "<group>"; };
 		F4C2D1C4293F96E10058361D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F4C2D1C6293F97190058361D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 		F4C2D1DB2942121E0058361D /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		F4DC250B297833A60009A20D /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
 		F4DC2558297837F70009A20D /* CoreModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreModel.xcodeproj; path = CoreModel/CoreModel.xcodeproj; sourceTree = "<group>"; };
+		F4DC25A9297839A80009A20D /* CoreManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreManager.xcodeproj; path = CoreManager/CoreManager.xcodeproj; sourceTree = "<group>"; };
 		F4E2F68C2959BBEA0009DAC0 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		F4E2F68E2959D5450009DAC0 /* FavoriteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepo.swift; sourceTree = "<group>"; };
 		F4E2F6902959DA4F0009DAC0 /* DetailRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepo.swift; sourceTree = "<group>"; };
@@ -143,6 +152,7 @@
 				F4E2F68B2955A8DD0009DAC0 /* Alamofire in Frameworks */,
 				F4DC2575297838DA0009A20D /* CoreModel.framework in Frameworks */,
 				F4E2F6882955A8370009DAC0 /* SnackBar in Frameworks */,
+				F4DC25B7297839E50009A20D /* CoreManager.framework in Frameworks */,
 				F4E2F6822955A7870009DAC0 /* NVActivityIndicatorView in Frameworks */,
 				F4E2F6762955A7360009DAC0 /* IQKeyboardManagerSwift in Frameworks */,
 				F4E2F67F2955A76E0009DAC0 /* SDWebImage in Frameworks */,
@@ -207,10 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				F4042FB6292E61F10031ABFD /* App */,
+				F4DC25A9297839A80009A20D /* CoreManager.xcodeproj */,
 				F4DC2558297837F70009A20D /* CoreModel.xcodeproj */,
 				F4DC250B297833A60009A20D /* Common.xcodeproj */,
 				F4042FBD292E64E10031ABFD /* Module */,
-				F4042FBF292E64ED0031ABFD /* Manager */,
 				F4042FD0292E87CC0031ABFD /* Service */,
 				F4042FAB292E60E80031ABFD /* Assets.xcassets */,
 				F4338AE6296C85A400476422 /* Localizable.strings */,
@@ -238,14 +248,6 @@
 				F4042FC6292E7BD50031ABFD /* Home */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		F4042FBF292E64ED0031ABFD /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				F4C2D1BD293F7C450058361D /* DatabaseManager.swift */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		F4042FC6292E7BD50031ABFD /* Home */ = {
@@ -304,6 +306,14 @@
 			isa = PBXGroup;
 			children = (
 				F4DC255D297837F80009A20D /* CoreModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4DC25AA297839A80009A20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC25AE297839A80009A20D /* CoreManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -436,6 +446,10 @@
 					ProjectRef = F4DC250B297833A60009A20D /* Common.xcodeproj */;
 				},
 				{
+					ProductGroup = F4DC25AA297839A80009A20D /* Products */;
+					ProjectRef = F4DC25A9297839A80009A20D /* CoreManager.xcodeproj */;
+				},
+				{
 					ProductGroup = F4DC2559297837F70009A20D /* Products */;
 					ProjectRef = F4DC2558297837F70009A20D /* CoreModel.xcodeproj */;
 				},
@@ -461,6 +475,13 @@
 			fileType = wrapper.framework;
 			path = CoreModel.framework;
 			remoteRef = F4DC255C297837F80009A20D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4DC25AE297839A80009A20D /* CoreManager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreManager.framework;
+			remoteRef = F4DC25AD297839A80009A20D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -564,7 +585,6 @@
 				F4042FCB292E836C0031ABFD /* HomeViewModel.swift in Sources */,
 				F4042FD4292E87F60031ABFD /* APIConfiguration.swift in Sources */,
 				F4FB55B22948AB3900790DC7 /* ProfileProtocol.swift in Sources */,
-				F4C2D1BE293F7C450058361D /* DatabaseManager.swift in Sources */,
 				F4E2F68D2959BBEA0009DAC0 /* HomeRepo.swift in Sources */,
 				F4FB55B42948AB4000790DC7 /* ProfileViewModel.swift in Sources */,
 				F4042FD2292E87E00031ABFD /* NetworkProtocol.swift in Sources */,
