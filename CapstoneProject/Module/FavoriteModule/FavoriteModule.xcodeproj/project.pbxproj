@@ -23,9 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24117CB77E3204C3D2F94906 /* Pods-FavoriteModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteModule.release.xcconfig"; path = "Target Support Files/Pods-FavoriteModule/Pods-FavoriteModule.release.xcconfig"; sourceTree = "<group>"; };
+		24117CB77E3204C3D2F94906 /* Pods-FavoriteModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteModule.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-FavoriteModule/Pods-FavoriteModule.release.xcconfig"; sourceTree = "<group>"; };
 		7D0BCE205EB77639A8E9481D /* Pods_FavoriteModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavoriteModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6236B8E5CAE58B6AB084C32 /* Pods-FavoriteModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteModule.debug.xcconfig"; path = "Target Support Files/Pods-FavoriteModule/Pods-FavoriteModule.debug.xcconfig"; sourceTree = "<group>"; };
+		A6236B8E5CAE58B6AB084C32 /* Pods-FavoriteModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteModule.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-FavoriteModule/Pods-FavoriteModule.debug.xcconfig"; sourceTree = "<group>"; };
 		F4DC267429783E870009A20D /* FavoriteModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavoriteModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC26CE297840770009A20D /* FavoriteProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		F4DC26CF297840770009A20D /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };

@@ -34,20 +34,20 @@ end
 
 target 'ProfileModule' do
   inherit! :search_paths
-  project '../CapstoneProject/CapstoneProject/ProfileModule/ProfileModule.xcodeproj'
+  project '../CapstoneProject/CapstoneProject/Module/ProfileModule/ProfileModule.xcodeproj'
 end
 
 target 'FavoriteModule' do
   inherit! :search_paths
-  project '../CapstoneProject/CapstoneProject/FavoriteModule/FavoriteModule.xcodeproj'
+  project '../CapstoneProject/CapstoneProject/Module/FavoriteModule/FavoriteModule.xcodeproj'
 end
 
 target 'HomeModule' do
   inherit! :search_paths
-  project '../CapstoneProject/CapstoneProject/HomeModule/HomeModule.xcodeproj'
+  project '../CapstoneProject/CapstoneProject/Module/HomeModule/HomeModule.xcodeproj'
 end
 
 target 'DetailModule' do
   inherit! :search_paths
-  project '../CapstoneProject/CapstoneProject/DetailModule/DetailModule.xcodeproj'
+  project '../CapstoneProject/CapstoneProject/Module/DetailModule/DetailModule.xcodeproj'
 end
