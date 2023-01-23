@@ -18,6 +18,7 @@ public final class CapstoneTableViewCell: UITableViewCell {
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         commonInit()
+        // tes comemnnt
     }
 
     required init?(coder: NSCoder) {
